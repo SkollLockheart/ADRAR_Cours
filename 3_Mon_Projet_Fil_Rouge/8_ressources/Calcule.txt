@@ -1,0 +1,40 @@
+NMG : Niveau Moyen du Groupe
+Sommes des Niveaux des joueurs / Nombre de joueurs = Entier Supérieur
+Si 3 joueurs ou moins NMG-1
+Si 6 joueurs ou moins NMG+1
+
+Difficulté:
+Facile      NMG-1
+Moyen       NMG+0
+Ardu        NMG+1
+Difficile   NMG+2
+Héroïque    NMG+3
+
+FP : Facteur de Puissance  = NMD + Difficulté
+
+Rencontre : 
+Défie par le tableau de récompence XP
+FP = Budget XP 
+Budget XP = Total XP des ennemis de la Rencontre
+
+    ----------------------------------------------
+
+PNJ : 
+DV en fonction du niveau de classes et non de race
+PNJ avec classes PJ: FP = NivClasse-1
+Classes de PNJ: FP = NivClasse-2
+SI FP<1, Suivre progression par cran : 1/2 ; 1/4 ; 1/6 ; 1/8 .
+
+Équivalence des FP: 
+01 créature      FP+0
+02 créature      FP+2
+03 créature      FP+3
+04 créature      FP+4
+06 créature      FP+5
+08 créature      FP+6
+12 créature      FP+7
+16 créature      FP+8
+
+Ajustement FP Circonstance:
+Terrain favorable PJ    = FP-1
+Terrain défavorable PJ  = FP+1
