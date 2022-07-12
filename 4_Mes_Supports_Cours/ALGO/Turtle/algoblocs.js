@@ -95,6 +95,99 @@ forward(100);
 arcLeft(50,180);
 forward(50);
 
+
+// Initialisation A8
+setPos(250,250);
+setLineWidth(10);
+changeColor("#8e44ad");
+faceUp();
+// Réalisation A8
+forward(50);
+faceRight();
+forward(100);
+faceDown();
+forward(200);
+faceLeft();
+forward(50);
+up();
+arcRight(50,90);
+down();
+forward(50);
+
+
+// Initialisation A9
+setPos(150,350);
+setLineWidth(10);
+changeColor(color.aqua);
+faceRight();
+// Réalisation A9
+forward(200);
+faceLeft();
+arcRight(50,180);
+arcLeft(50,180);
+forward(200);
+arcLeft(50,180);
+arcRight(50,180);
+
+
+// Initialisation A10
+setPos(250,250);
+setLineWidth(10);
+changeColor(color.red);
+faceRight();
+// Réalisation A10
+arcLeft(50,180);
+changeColor(color.green);
+arcLeft(100,180);
+changeColor(color.yellow);
+arcLeft(200,180)
+
+
+// Initialisation A11
+setPos(125,200);
+setLineWidth(10);
+changeColor(color.blue);
+faceUp();
+// Réalisation A11
+arcRight(50,180);
+up();
+faceRight();
+forward(50);
+faceUp();
+down();
+arcRight(50,180);
+up();
+forward(50);
+faceLeft();
+forward(25);
+faceDown();
+down();
+changeColor("#8e44ad");
+arcRight(100,180);
+
+
+
+// Initialisation A12
+setPos(25,200);
+setLineWidth(10);
+changeColor(color.green);
+faceUp();
+// Réalisation A12
+arcRight(50,180);
+forward(100);
+arcLeft(50,180);
+faceRight();
+up();
+forward(50);
+faceDown();
+changeColor("#e67e22")
+down();
+arcLeft(50,180);
+forward(100);
+arcRight(50,180);
+*/
+
+/*
 -----------------------B----------------------------
 // Initialisation B1
 setPos(150,150);
@@ -297,6 +390,111 @@ for(let j=0;j<3;j++){
     right(90);
 }
 
+
+// Initialisation B13
+setPos(200,200);
+setLineWidth(10);
+changeColor(color.green);
+faceRight();
+// Réalisation B13
+for(let i=0;i<8;i++){
+    forward(50);
+    left(180-45);
+    forward(25);
+    right(90);
+    forward(25);
+    right(90);
+}
+
+
+// Initialisation B14
+setPos(100,100);
+setLineWidth(10);
+changeColor(color.yellow);
+faceRight();
+// Réalisaion B14
+forward(50);
+for(let i=0;i<5;i++){
+    right(180-60);
+    forward(100);
+    left(180-60);
+    forward(100);
+}
+
+
+// Initialisation B15
+setPos(250,250);
+setLineWidth(10);
+changeColor(color.red);
+faceRight();
+// Réalisation B15
+for(let i=0;i<4;i++){
+    forward(100);
+    arcLeft(50,90);
+}
+
+
+// Initialisation B16
+setPos(150,350);
+setLineWidth(10);
+changeColor(color.green);
+faceRight();
+// Réalisation B16
+arcLeft(200,90);
+faceLeft();
+for(let i=0;i<4;i++){
+    arcLeft(25,90);
+    arcRight(25,90);
+}
+
+
+// Initialisation B17
+setPos(200,250);
+setLineWidth(10);
+changeColor(color.blue);
+faceRight();
+// Réalisation B17
+for(let i=0;i<6;i++){
+    arcLeft(50,180);
+    left(180-60);
+}
+
+
+// Initialisation B18
+setPos(200,300);
+setLineWidth(10);
+changeColor(color.yellow);
+faceRight();
+// Réalisation B18
+for(let i=0;i<8;i++){
+    forward(200);
+    left(180-90);
+    forward(50);
+    left(45);
+}
+*/
+
+// Initialisation B19
+setPos(250,475);
+setLineWidth(10);
+changeColor(color.aqua);
+faceRight();
+// Réalisation B19
+for(let i=0;i<4;i++){
+    arcLeft(50,180);
+    faceRight();
+}
+faceUp();
+up();
+forward(50);
+down();
+faceLeft();
+for(let i=0;i<4;i++){
+    arcLeft(50,180);
+    faceLeft();
+}
+
+/*
 --------------C---------------------
 // Initialisation C1
 setPos(50,225);
@@ -385,7 +583,7 @@ for(let i=0;i<4;i++){
     right(90);
     shiftColor(0.25);
 }
-*/
+
 
 // Initialisation C6
 setPos(250,275);
@@ -400,3 +598,4 @@ for(let i=0;i<3;i++){
     }
     right(180-60);
 }
+*/
