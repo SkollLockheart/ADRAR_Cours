@@ -6,15 +6,15 @@
 <style>
   article, aside, figure, footer, header, hgroup, 
   menu, nav, section { display: block; }
-  canvas {border: 1px dotted #564b47;}
+  canvas {border: 1px dotted #000000;}
 </style>
 </head>
 <body>
 
-<h1>HTML5 canvas turtle graphics</h1>
+<h1>LA TORTUE !!!</h1>
 
 <div>
-	<canvas id="myDrawing" width="600" height="600"></canvas>
+	<canvas id="myDrawing" width="500" height="500"></canvas>
 </div>
 	
 <script src="turtle.js"></script>
@@ -22,8 +22,9 @@
 <script src="algoblocs.js"></script>
 
 <script>
-
+/*
 // Write your code here.
+
 
 // Change the turtle position
 setPos(300,100);
@@ -80,6 +81,34 @@ forward(100);
 // Shift the colors, rainbow
 shiftColor(0);
 shiftColor(0.45);
+
+// Répéter 4 fois
+for(let i=0;i<4;i++) {
+  forward(100);
+  right(90);
+}
+
+// Répéter dans Répéter
+for(let i=0;i<3;i++){
+  for(let j=0;j<4;j++){
+    forward(50);
+    right(90);
+  }
+  up();
+  forward(100);
+  down();
+}
+left(90);
+forward(100);
+
+// Décalé couleur
+shiftColor(0.25); //décale la couleur de 25%
+// Tortue a de base était définie sur rouge(turtle.js) 
+shiftColor(0.5); // décale à la couleur Cyan
+*/
+// Variable 
+let longueur=100;
+forward(longueur);
 
 </script>
 
