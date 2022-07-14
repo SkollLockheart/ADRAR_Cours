@@ -1,4 +1,6 @@
 /*
+// J'ai modifier le canvas de turtle.html en 500x500 pour /2 les mesures.
+
 ----------------------A-------------------------------
 // Initialisation A1
 setPos(300, 300);
@@ -517,6 +519,112 @@ up();
 forward(75);
 down();
 arcRight(50,360);
+
+
+// Initialisation B21
+setPos(300,150);
+setLineWidth(10);
+shiftColor(.5);
+faceRight()
+// Réalisation B21
+for(let i=0;i<6;i++){
+    forward(100);
+    left(180-60);
+    forward(50);
+    left(180-60);
+    forward(100);
+    right(60);   
+    forward(50);
+    right(180-60);
+    forward(50);
+    right(180-60);
+    up()
+    forward(100);
+    shiftColor(.12);
+    down();
+}
+
+
+// Initialisation B22
+setPos(250,300);
+setLineWidth(10);
+changeColor(color.yellow);
+faceRight();
+left(30);
+// Réalisation B22
+for(let i=0;i<6;i++){
+    forward(100);
+    left(60);
+}
+changeColor(color.red);
+right(90);
+for(let j=0;j<3;j++){
+    forward(100);
+    right(180-60);
+}
+changeColor(color.green);
+for(let k=0;k<2;k++){
+    for(let l=0;l<4;l++){
+        forward(100);
+        left(90);
+    }
+    right(150);
+}
+
+// Initialisation B23
+setPos(150,250);
+setLineWidth(10);
+changeColor("#8e44ad");
+faceRight();
+left(45);
+// Réalisation B23
+for(let i=0;i<2;i++){
+    for(let j=0;j<3;j++){
+        forward(50);
+        right(90);
+        forward(50);
+        left(90);
+    }
+    right(135);
+    forward(50);
+    right(45);
+}
+
+
+// Initialisation B24
+setPos(200,200);
+setLineWidth(10);
+changeColor(color.red);
+faceRight();
+// Réalisation B24
+for(let i=0;i<8;i++){
+    forward(100);
+    left(180-45);
+}
+forward(50);
+right(45);
+changeColor(color.green);
+for(let j=0;j<3;j++){
+    forward(100);
+    faceLeft();
+    forward(50);
+    left(180-45);
+}
+faceLeft();
+forward(50);
+faceDown();
+for(let k=0;k<3;k++){
+    forward(25);
+    right(90);
+}
+faceLeft();
+forward(50);
+for(let l=0;l<3;l++){
+    forward(50);
+    right(180-45);
+    forward(100);
+    faceLeft();
+}
 */
 
 /*
@@ -623,7 +731,124 @@ for(let i=0;i<3;i++){
     }
     right(180-60);
 }
+
+
+// Initialisation C7
+setPos(250,350);
+setLineWidth(10);
+changeColor("#e67e22");
+faceRight();
+// Réalisation C7
+for(let i=0;i<8;i++){
+    for(let j=0;j<4;j++){
+        forward(50);
+        right(180-60);
+    }
+    left(165);
+}
+
+
+// Initialisation C8
+setPos(250,475);
+setLineWidth(10);
+changeColor(color.green);
+faceUp();
+// Réalisation C8
+forward(200);
+right(45);
+for(let i=0;i<4;i++){
+    changeColor(color.red);
+    for(let j=0;j<3;j++){
+        forward(100);
+        right(180-60);
+    }
+    changeColor(color.yellow);
+    forward(100);
+    left(90);
+}
+
+
+// Initialisation C9
+setPos(350,350);
+setLineWidth(10);
+changeColor(color.green);
+faceRight();
+// Réalisation C9
+for(let i=0;i<3;i++){
+    for(let j=0;j<3;j++){
+        for(let k=0;k<4;k++){
+            right(90);
+            forward(50);
+        }
+        forward(50);
+        right(180-60);
+    }
+    left(180-60);
+    forward(200);
+}
+
+
+// Initialisation C10
+setPos(250,100);
+setLineWidth(10);
+changeColor(color.red);
+faceDown();
+// Réalisation C10
+for(let i=0;i<4;i++){
+    for(let j=0;j<4;j++){
+        forward(50);
+        for(let k=0;k<4;k++){
+            left(90);
+            forward(25);
+        }
+        right(90);
+    }
+    forward(100);
+}
+
+
+// Initialisation C11
+setPos(200,175);
+setLineWidth(10);
+shiftColor(.5);
+faceRight();
+// Réalisation C11
+for(let i=0;i<6;i++){
+    for(let j=0;j<6;j++){
+        for(let k=0;k<4;k++){
+            forward(50);
+            left(180-60);
+        }
+        right(60);
+    }
+    up();
+    forward(100);
+    right(60);
+    shiftColor(.12);
+    down();
+}
 */
+
+// Initialisation C12
+setPos(250,200);
+setLineWidth(10);
+changeColor(color.yellow);
+faceRight();
+// Réalisation C12
+for(let i=0;i<4;i++){
+    for(let j=0;j<2;j++){
+    arcLeft(50,90);
+    forward(50);
+    left(90);
+    }
+    arcRight(50,45);
+}
+changeColor(color.blue);
+arcRight(50,180);
+left(180-60);
+arcLeft(100,300);
+
+
 
 /*
 -------------------D------------------------------
@@ -740,7 +965,7 @@ for(let i=0;i<10;i++){
     longueur+=10;
     angle-=5;
 }
-*/
+
 
 // Initialisation D16
 setPos(250,200);
@@ -752,11 +977,24 @@ forward(100);
 right(180-60);
 forward(50);
 faceLeft();
-for(let i=0;i<2;i++){
+for(let i=0;i<3;i++){
     forward(50);
     right(90);
 }
+left(180-60);
 forward(50);
-
-
-
+up();
+faceRight();
+forward(50);
+down();
+changeColor(color.red);
+let rayon=50;
+for(let j=0;j<3;j++){
+    arcRight(rayon,180);
+    up();
+    rayon+=25;
+    arcRight(rayon,180);
+    down();
+    rayon+=25;
+}
+*/
