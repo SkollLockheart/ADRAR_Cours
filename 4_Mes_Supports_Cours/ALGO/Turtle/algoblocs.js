@@ -519,7 +519,7 @@ up();
 forward(75);
 down();
 arcRight(50,360);
-
+/*
 
 // Initialisation B21
 setPos(300,150);
@@ -827,7 +827,7 @@ for(let i=0;i<6;i++){
     shiftColor(.12);
     down();
 }
-*/
+
 
 // Initialisation C12
 setPos(250,200);
@@ -847,7 +847,7 @@ changeColor(color.blue);
 arcRight(50,180);
 left(180-60);
 arcLeft(100,300);
-
+*/
 
 
 /*
@@ -997,4 +997,223 @@ for(let j=0;j<3;j++){
     down();
     rayon+=25;
 }
+*/
+
+/*
+--------------------E----------------------------
+
+// Initialisation E1
+setPos(75,250);
+setLineWidth(10);
+changeColor("#e67e22");
+faceRight();
+// Réalisation E1
+function etoile(){
+    for(let j=0;j<5;j++){
+        forward(75);
+        right(180-36);
+    }
+}
+for (let i=0;i<2;i++){
+    etoile();
+    forward(100);
+}
+forward(100);
+changeColor(color.green);
+etoile();
+
+
+// Initialisation E2
+setPos(250,250);
+setLineWidth(10);
+faceRight();
+// Réalisation E2
+function drapeau(){
+    forward(100);
+    for(let j=0;j<3;j++){
+        forward(100);
+        right(180-60);
+    }
+    right(180);
+    forward(100);
+    left(90);
+}
+for(let i=0;i<2;i++){
+    changeColor(color.blue);
+    drapeau();
+    changeColor(color.red);
+    drapeau()
+}
+
+
+// Initialisation E3
+setPos(200,300);
+setLineWidth(10);
+faceRight();
+changeColor(color.yellow);
+// Réalisation E3
+function carre(){
+    for(let j=0;j<4;j++){
+        forward(50);
+        left(90);
+    }
+}
+for(let i=0;i<6;i++){
+    carre();
+    forward(100);
+    left(60);
+}
+
+
+//Initialisation E4
+setPos(0,400);
+setLineWidth(10);
+faceRight();
+changeColor(color.red);
+// Réalisation E4
+function stair(){
+    for(let i=0;i<2;i++){
+        forward(50);
+        left(90);
+        forward(50);
+        right(90);
+    }
+}
+stair();
+changeColor(color.yellow);
+forward(100);
+changeColor(color.blue);
+stair();
+changeColor(color.green);
+stair();
+forward(100);
+
+
+// Initialisation E5
+setPos(250,250);
+setLineWidth(10);
+faceDown();
+changeColor(color.blue);
+function L(){
+    forward(100);
+    left(90);
+    forward(50);
+}
+// Réalisation E5
+L();
+changeColor(color.green);
+L();
+changeColor("#e67e22");
+L();
+changeColor(color.fuchsia);
+right(90);
+L();
+
+
+// Initialisation E6
+setPos(100,200);
+setLineWidth(10);
+faceRight();
+changeColor(color.green);
+function triangle(){
+    for(let i=0;i<3;i++){
+        forward(100);
+        right(180-60);
+    }
+}
+// Réalisation E6
+triangle();
+forward(100);
+changeColor("#8e44ad");
+triangle();
+up();
+forward(200);
+right(90);
+down();
+changeColor("#e67e22");
+triangle();
+
+
+// Initialisation E7
+setPos(25,250);
+setLineWidth(10);
+changeColor(color.red);
+faceRight();
+function motif(){
+    for(let i=0;i<2;i++){
+        forward(50);
+        left(45);
+        forward(100);
+        left(180-45);
+    }
+}
+function espace(){
+    up();
+    forward(100);
+    down();
+}
+// Réalisation E7
+motif();
+espace();
+motif();
+espace();
+changeColor(color.blue);
+motif();
+forward(50);
+motif();
+forward(50);
+motif();
+
+
+// Initialisation E8
+setPos(100,250);
+setLineWidth(10);
+changeColor(color.red);
+faceRight();
+function doubleT(){
+    for(let i=0;i<3;i++){
+        forward(100);
+        left(180-60);
+    }
+    for(let j=0;j<3;j++){
+        forward(50);
+        right(180-60);
+    }
+}
+// Réalisation E8
+doubleT();
+forward(100);
+changeColor(color.aqua);
+doubleT();
+forward(100);
+right(90);
+changeColor(color.yellow);
+doubleT();
+
+
+// Initialisation E9
+setPos(0,300);
+setLineWidth(10);
+changeColor("#8e44ad");
+faceRight();
+function maison(){
+    faceUp();
+    forward(100);
+    right(45);
+    forward(50);
+    right(90);
+    forward(50);
+    faceDown();
+    forward(100);
+    faceRight();
+    forward(50);
+}
+// Réalisation E9
+forward(50);
+maison();
+forward(50);
+maison();
+changeColor(color.green);
+maison();
+forward(50);
 */
