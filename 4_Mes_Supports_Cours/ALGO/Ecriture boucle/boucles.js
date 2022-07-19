@@ -384,3 +384,6 @@ console.log("Exercice 22");
 */
 console.log("Exercice 23");
 // TODO
+
+
+int input 
