@@ -275,6 +275,13 @@ console.log(total);
 // Exercice 17 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 302253
 console.log("Exercice 17");
 // TODO
+let nombre=0;
+let result17;
+for(let i=0;nombre<302253;i++){
+    result17=i;
+    nombre=nombre+i;  
+}
+console.log(result17);
 
 
 // Exercice 18 : Afficher :
@@ -290,10 +297,35 @@ console.log("Exercice 17");
 // 55
 console.log("Exercice 18");
 // TODO
+let a=1;
+let b=0;
+let c=0;
+
+for(let i=0;i<10;i++){
+    c=a+b;
+    a=b;
+    b=c;
+    console.log(c);
+}
+
 
 // Exercice 19 : compter combien il y a de nombres multiples de 3 ou de 7 entre 1234 et 5678
 console.log("Exercice 19");
 // TODO
+let compteur3=0;
+let compteur7=0;
+for(let i=1234;i<5679;i++){
+    if(i%3==0){
+        compteur3=compteur3+1;
+    }else{if(i%7==0){
+        compteur7=compteur7+1;
+         }else{
+            }
+    }
+}
+console.log(compteur3);
+console.log(compteur7);
+
 
 // Exercice 20 : afficher dans la console :
 /*
@@ -305,6 +337,11 @@ console.log("Exercice 19");
 */
 console.log("Exercice 20");
 // TODO
+etoile="";
+for(let i=0;i<5;i++){
+    etoile+="*";
+    console.log(etoile);
+}
 
 // Exercice 21 : afficher dans la console :
 /*
@@ -316,6 +353,11 @@ console.log("Exercice 20");
 */
 console.log("Exercice 21");
 // TODO
+for(let i=?;i<?;i?){
+    for(let j=?;i<?;i?){
+        
+    }
+}
 
 // Exercice 22 : afficher dans la console :
 /*
