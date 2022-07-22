@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="function.js"></script>
+
+    <form action="function.js" method="POST">
+        <!-- Niveaux des joueurs -->
+        <label for="nivJoueur1">Joueur 1 Niveau:</label>
+        <input type="number" name="nivJoueur1" placeholder="">
+        <br>
+        <label for="nivJoueur2">Joueur 2 Niveau:</label>
+        <input type="number" name="nivJoueur2" placeholder="">
+        <br>
+        <label for="nivJoueur3">Joueur 3 Niveau:</label>
+        <input type="number" name="nivJoueur3" placeholder="">
+        <br>
+        <label for="nivJoueur4">Joueur 4 Niveau:</label>
+        <input type="number" name="nivJoueur4" placeholder="">
+        <br>
+        <label for="nivJoueur5">Joueur 5 Niveau:</label>
+        <input type="number" name="nivJoueur5" placeholder="">
+        <br>
+        <label for="nivJoueur6">Joueur 6 Niveau:</label>
+        <input type="number" name="nivJoueur6" placeholder="">
+        <br>
+        <!-- Nombre de joueurs -->
+        <label for="nombreDeJoueurs">Nombre de Joueurs:</label>
+        <input type="number" name="nombreDeJoueurs" placeholder="">
+        <br>
+
+        <!-- Niveau de Difficulté -->
+        <label for="rencontreDifficulté">Niveau de Difficulté:</label>
+
+        <select name="rencontreDifficulté" id="rencontreDifficulté">
+            <option value="">--Selection--</option>
+            <option value="facile">Facile</option>
+            <option value="moyen">Moyen</option>
+            <option value="ardu">Ardu</option>
+            <option value="difficile">Difficile</option>
+            <option value="heroique">Héroïque</option>
+        </select>
+        <br>
+
+        <button type="submit">ENVOYER</button>
+
+    </form>
+    
+</body>
+</html>
