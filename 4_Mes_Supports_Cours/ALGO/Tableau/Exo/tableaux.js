@@ -1,5 +1,5 @@
 // 1) Créer un tableau tab1 de 6 cases, qui contient les nombres 144, 202, 216, 216, 222 et 64.
-let tab1 = [144,202,216,222,64];
+let tab1 = [144,202,216,216,222,64];
 // 2) Ajouter le nombre 0 à la fin du tableau tab1.
 tab1.push(0);
 // 3) Afficher *un par un* tous les éléments du tableau tab1.
@@ -9,7 +9,7 @@ for(let i=0;i<tab1.length;i++){
 // 4) Retirer le dernier élément du tableau tab1.
 tab1.pop();
 // 5) Créer un tableau tab2 qui contient les nombres 238, 222, 228, 216, 200.
-let tab2 = [237,222,216,200];
+let tab2 = [238,222,228,216,200];
 // 6) Ajouter le nombre 58 à la fin de tab2.
 tab2.push(58);
 // 7) Ajouter *un par un* tous les éléments du tableau tab2 à la fin du tableau tab1.
