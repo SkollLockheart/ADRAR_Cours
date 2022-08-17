@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Info personnelles</legend>
+        <form method="post" action="">
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" placeholder="Ex: Jacques" minlenght="2" maxlength="20" id="prenom"/>
+        </br>
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" placeholder="Ex: Dubois" minlenght="2" maxlength="20" id="nom"/>
+        </br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Ex: monMail@FAI.com" id="email"/>
+        </br>
+            <label for="num">Numéro:</label>
+            <input type="tel" name="num" placeholder="Ex: 00.11.22.33.44" id="num"/>
+        </br>
+            <label for="pass">Mot de passe:</label>
+            <input type="password" name="pass" placeholder="Ex: P@ssWo4d" minlenght="8" maxlength="30" id="pass"/>
+        </br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" placeholder="Ex: 15" minlenght="1" maxlength="99" id="age"/>
+        </br>
+            <label for="com">Laissez un commentaire:</label>
+        </br>    
+            <textarea type="text" name="com" cols="70" rows="10" placeholder="J'adore ce que vous faites !" id="name"></textarea>
+        </br>
+            <label for="date">Date de mon commentaire:</label>
+            <input type="date" name="date" id="date"/>  
+        </br>
+            <label for="photo">Ma photo:</label>
+            <input type="file" name="photo" accept=".jpg, .png, .gif" id="photo"/>  
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Vous préférez:</legend>
+        <form method="post" action="">
+            <input type="checkbox" id="checkbox"/><label for="checkbox">Le HTML</label>
+        </br>
+            <input type="checkbox" id="checkbox2"/><label for="checkbox2">Le CSS</label>
+        </br>
+            <input type="checkbox" id="checkbox3"/><label for="checkbox3">Le JavaScript</label>
+        </br>
+            <input type="checkbox" id="checkbox4"/><label for="checkbox4">Ne rien faire</label>
+        </br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Vous vous levez:</legend>
+        <form method="post" action="">
+            <input type="radio" id="radio" name="radio" value="radio1" /><label for="radio">Le matin</label>
+        </br>
+            <input type="radio" id="radio" name="radio" value="radio2" /><label for="radio">Le midi</label>
+        </br>
+            <input type="radio" id="radio" name="radio" value="radio3" /><label for="radio">Le soir</label>
+        </br>
+            <input type="radio" id="radio" name="radio" value="radio4" /><label for="radio">En retard !</label>
+        </br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Fin du formulaire</legend>
+        <form method="post" action="">
+            <label for="liste">Vous en avez assez ?</label>
+            <select name="liste" id="liste">
+                <optgroup label="Team Pas encore">
+                    <option value="option1">J'en veux plus</option>
+                    <option value="option2">C'est super !</option>
+                </optgroup>
+                <optgroup label="Team Oula">
+                    <option value="option3">J'en ai marre</option>
+                    <option value="option4">Pitié !</option>
+                </optgroup>
+            </select>
+        </br>
+            <input type="submit" value="Envoyer"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    </fieldset>
+</body>
+</html>
