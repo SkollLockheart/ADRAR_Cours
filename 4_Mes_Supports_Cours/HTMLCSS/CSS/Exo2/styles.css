@@ -1,0 +1,32 @@
+/* li:nth-child(1n){
+    color: red;
+}
+li:nth-child(2n){
+    color: orange;
+}
+li:nth-child(3n){
+    color: yellow;
+}
+li:nth-child(4n){
+    color: green;
+}
+li:nth-child(5n){
+    color: blue;
+}
+li:nth-child(6n){
+    color: indigo;
+}
+li:nth-child(7n){
+    color: purple;
+} */
+
+li:nth-child(even){
+    color: blue;
+}
+
+ul:hover li:nth-child(odd){
+    color: blue;
+}
+ul:hover li:nth-child(even){
+    color: black;
+}

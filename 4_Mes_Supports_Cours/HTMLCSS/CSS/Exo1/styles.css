@@ -1,0 +1,27 @@
+h1 {
+    color: blue;
+}
+
+h1:hover {
+    color: green;
+}
+
+p:active {
+    background-color: gray;
+}
+
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+img:hover {
+    display: none;
+}
+
+p{
+    text-shadow: 3px 3px 5px chartreuse;
+}
