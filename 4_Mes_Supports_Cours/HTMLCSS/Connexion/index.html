@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <h1>Connexion</h1>
+        <div>
+            <label class="champs">Pseudo:</label>
+            <input type="text" name="pseudo" placeholder="Mon pseudo" id="pseudo">    
+        </div>
+        <br>
+        <div>
+            <label class="champs">Mot de passe:</label>
+            <input type="text" name="pass" placeholder="Mon mot de passe" id="pass">    
+        </div>
+        <br>
+        <input type="checkbox" name="memo" checked id="memo"><label>Se souvenir de moi</label>
+        <br>
+        <div class="bouton">
+            <input type="submit" name="envoi" value="Connexion" id="envoi">
+            <input type="button" name="retour" value="Retour" id="retour">
+        </div>
+    </form>
 </body>
 </html>
