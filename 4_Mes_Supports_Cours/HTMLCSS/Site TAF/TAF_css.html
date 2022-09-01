@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="TAF_style.css">
+    <title>Découverte CSS</title>
+</head>
+<body>
+    <header>
+        <div class="page_nav">
+                <a href="./TAF_index.html" style="text-decoration:none"><img src="images/LogoTaf.png" id="logoTop"></a>
+                <nav id="navHead">
+                    <ul id="ulHead">
+                        <li class="liHead"><a href="./TAF_index.html" style="text-decoration:none">CYBERDEV ADRAR</a></li>
+                        <li class="liHead"><a href="./TAF_html.html" style="text-decoration:none">HTML</a></li>
+                        <li class="liHead"><a href="./TAF_css.html" style="text-decoration:none">CSS</a></li>
+                        <li class="liHead"><a href="./TAF_js.html" style="text-decoration:none">JAVASCRIPT</a></li>
+                        <li class="liHead"><a href="./TAF_librairie.html" style="text-decoration:none">Librairie API/JS</a></li>
+                            <li class="miniJeu">
+                                <a id="miniJeu" href="TAF_miniJeux.html"> MINI-JEUX</a>
+                                <div class="jeu">
+                                    <a href="https://www.codemonkey.com/" style="text-decoration:none" class="listJeu">CODEMONKEY</a>
+                                    <a href="https://www.codingame.com/start" style="text-decoration:none" class="listJeu">CODINGAME</a>
+                                    <a href="https://flukeout.github.io/" style="text-decoration:none" class="listJeu">CSS DINER</a>
+                                    <a href="http://flexboxfroggy.com/" style="text-decoration:none" class="listJeu">FLEXBOX FROGGY</a>
+                                </div>
+                            </li>
+                       
+                       
+                        <li><button type="button" id="buttonHead"><a href="https://www.adrar-formation.com/contact%22%3E" style="text-decoration:none">CONTACT</a></button></li>
+                        
+                    </ul>
+                </nav>
+        </div>
+        <div id="backImg">
+            <img src="images/TP TAF BACKGROUND.png" id="imgDeFond">
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>Présentation CSS</h1>
+            <div>
+                <p> CSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C. Ce standard évolue sous forme de niveaux (levels), CSS1 est désormais considéré comme obsolète, CSS2.1 correspond à la recommandation et CSS3, qui est découpé en modules plus petits, est en voie de standardisation.</p>
+            </div>
+            <br/>
+            <div class="image">
+                <img src="images/CSS3.png" alt="Logo CSS" width="300px" height="400px"> 
+            </div> 
+            <div id="sommaire">
+                <p id="titre_sommaire"><strong>Sommaire</strong></p>
+                <ul>
+                    <li><a href="#titre1" class="sommaire"><strong>Les bases des css</strong></a></li>
+                    <li><a href="#titre2" class="sommaire"><strong>Que sont les CSS, réellement ?</strong></a></li>
+                    <li><a href="#titre3" class="sommaire"><strong>Anatomie d'une règle CSS</strong></a></li>
+                </ul>
+            </div>
+                <h2 id="titre1">Les bases des css</h2>
+                <p>
+                    Les CSS (Cascading Style Sheets en anglais, ou « feuilles de style en cascade ») sont le code utilisé pour mettre en forme une page web. Les bases des CSS présentent ce qu'il faut savoir pour commencer. Nous répondrons à des questions comme : Comment rendre mon texte rouge ou noir ? Comment faire apparaître mon contenu à tel endroit de l'écran ? Comment décorer ma page web avec une image ou une couleur d'arrière-plan ?
+                </p>
+                <br>
+                <h2 id="titre2">Que sont les CSS, réellement ?</h2>
+                <p>
+                    De la même façon que HTML, CSS n'est pas vraiment un langage de programmation. C'est un langage de feuille de style, c'est-à-dire qu'il permet d'appliquer des styles sur différents éléments sélectionnés dans un document HTML. Par exemple, on peut sélectionner tous les éléments d'une page HTML qui sont paragraphes et afficher leurs textes en rouge avec ce code CSS :
+                </p>
+                <div class="image">
+                    <img src="images/css_rouge.PNG" alt="exemple css rouge">
+                </div>
+                <h2 id="titre3">Anatomie d'une règle CSS</h2>
+                <p>
+                    Regardons un peu plus en détails ce que nous avons écrit en CSS :
+                </p>
+                <div class="image">
+                    <img src="images/anatomie_css.PNG" alt="exemple css anatomie" width="25%" height="25%">
+                </div>
+                <p>Cette structure s'appelle un ensemble de règles (ou seulement « une règle »). Les différentes parties se nomment :</p>
+                <h3>Sélecteur</h3>
+                <p>   
+                   C'est le nom de l'élément HTML situé au début de l'ensemble de règles. Il permet de sélectionner les éléments sur lesquels appliquer le style souhaité (en l'occurence, les éléments p). Pour mettre en forme un élément différent, il suffit de changer le sélecteur.
+                </p>
+                <h3>Déclaration</h3>
+                <p>   
+                C'est une règle simple comme color: red; qui détermine les propriétés de l'élément que l'on veut mettre en forme.
+                </p>
+                <h3>Propriétés</h3>
+                <p>   
+                Les différentes façons dont on peut mettre en forme un élément HTML (dans ce cas, color est une propriété des éléments p). En CSS, vous choisissez les différentes propriétés que vous voulez utiliser dans une règle CSS.
+                </p>
+                <h3>Valeur de la propriété</h3>
+                <p>  
+                À droite de la propriété, après les deux points, on a la valeur de la propriété. Celle-ci permet de choisir une mise en forme parmi d'autres pour une propriété donnée (par exemple, il y a d'autres couleurs que red pour la propriété color).
+                </p>
+                <p>
+                    Les autres éléments importants de la syntaxe sont :</p>
+                <ul>
+                    <li>
+                        chaque ensemble de règles, à l'exception du sélecteur, doit être entre accolades ({}).
+                    </li>
+                    <li>
+                        pour chaque déclaration, il faut utiliser deux points (:) pour séparer la propriété de ses valeurs.
+                    </li>
+                    <li>
+                        pour chaque ensemble de règles, il faut utiliser un point-virgule (;) pour séparer les déclarations entre elles.
+                    </li>
+                </ol>
+        </article>
+    </main>
+
+    <footer>
+        <ul id="ulFoot">
+            <li class="liFoot">
+                <h1 class="h1Foot">ADRAR FORMATION (SIÈGE)</h1>
+                <p>
+                    2 Rue Irène Joliot Curie Parc Technologique du Canal
+                    <br>31520 Ramonville Saint Agne
+                    <br>Tél. : 05 62 19 20 80
+                    <br>adrarinfo@adrar-formation.com
+                </p>
+            </li>
+            <li class="liFoot">
+                <h1 class="h1Foot">ADRAR PÔLE NUMÉRIQUE</h1>
+                <p>
+                    11 avenue de l'Europe
+                    <br>31520 Ramonville Saint Agne
+                    <br>Tél: 05 34 31 38 10
+                    <br>polenumerique@adrar-formation.com
+                </p>
+            </li>
+            <li class="liFoot">
+                <a href="https://www.adrar-formation.com/formations-metiers-numeriques" class="aFoot">Pôle Numérique</a>
+                <br>
+                <a href="https://www.adrar-formation.com/contact" class="aFoot">Nous contacter</a>
+            </li>
+            <li class="liFoot">
+                <h1 class="h1Foot">Contact</h1>
+                <p>info</p>
+            </li>
+        </ul>
+</footer>
+</body>
+</html>

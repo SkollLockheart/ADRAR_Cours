@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="TAF_style.css">
+    <title>Librairie API/JS</title>
+</head>
+<body>
+    <header>
+        <div class="page_nav">
+                <a href="./TAF_index.html" style="text-decoration:none"><img src="images/LogoTaf.png" id="logoTop"></a>
+                <nav id="navHead">
+                    <ul id="ulHead">
+                        <li class="liHead"><a href="./TAF_index.html" style="text-decoration:none">CYBERDEV ADRAR</a></li>
+                        <li class="liHead"><a href="./TAF_html.html" style="text-decoration:none">HTML</a></li>
+                        <li class="liHead"><a href="./TAF_css.html" style="text-decoration:none">CSS</a></li>
+                        <li class="liHead"><a href="./TAF_js.html" style="text-decoration:none">JAVASCRIPT</a></li>
+                        <li class="liHead"><a href="./TAF_librairie.html" style="text-decoration:none">Librairie API/JS</a></li>
+                        
+                        <li class="miniJeu">
+                            <a id="miniJeu" href="TAF_miniJeux.html"> MINI-JEUX</a>
+                            <div class="jeu">
+                                <a href="https://www.codemonkey.com/" style="text-decoration:none" class="listJeu">CODEMONKEY</a>
+                                <a href="https://www.codingame.com/start" style="text-decoration:none" class="listJeu">CODINGAME</a>
+                                <a href="https://flukeout.github.io/" style="text-decoration:none" class="listJeu">CSS DINER</a>
+                                <a href="http://flexboxfroggy.com/" style="text-decoration:none" class="listJeu">FLEXBOX FROGGY</a>
+                            </div>
+                        </li>
+                       
+                       
+                        <li><button type="button" id="buttonHead"><a href="https://www.adrar-formation.com/contact%22%3E" style="text-decoration:none">CONTACT</a></button></li>
+                        
+                    </ul>
+                </nav>
+        </div>
+        <div id="backImg">
+            <img src="images/TP TAF BACKGROUND.png" id="imgDeFond">
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>Présentation bibliothèque de JavaScript</h1>
+            <div>
+                <p> Une bibliothèque JavaScript est un fichier .js – parfois plusieurs – déjà codé qui met à disposition des méthodes et des propriétés pour l’ajout de fonctionnalités dynamiques à une page HTML. Pour disposer de ces fonctionnalités, il est suffisant d’inclure la référence absolue ou relative au fichier externe à l’intérieur du tag script dans le code HTML de la page.
+
+                    Il existe principalement deux types de bibliothèques JavaScript :
+                </p>
+                <ol>
+                    <li>
+                        Les bibliothèques de type « général » qui facilitent le développement en JavaScript de manière globale, c’est-à-dire une sorte de version alternative (simplifiée souvent) ou d’extension du langage original ;
+                    </li>
+                    <li>
+                        Les bibliothèques de type « spécifique » qui facilitent l’intégration d’une fonctionnalité plutôt précise, par exemple des graphiques créés dynamiquement, des carrousels d’images, l’inclusion de vidéos, etc.
+                    </li>
+                  </ol>  
+            </div>
+            <div id="sommaire">
+                <p id="titre_sommaire"><strong>Sommaire</strong></p>
+                <ul>
+                    <li><a href="#titre1" class="sommaire">Comprendre les bibliothèques JavaScript</a></li>
+                    <li><a href="#titre2" class="sommaire">Une nouvelle API</a></li>
+                    <li><a href="#titre3" class="sommaire">Quelques exemples comme c'est beau</a></li>
+                </ul>
+            </div>
+                <h2 id="titre1">Comprendre les bibliothèques JavaScript</h2>
+                <p>
+                    Les bibliothèques JavaScript sont un exemple de code réutilisable (ou reusable code en anglais). Le même principe s'applique en effet également aux CSS ou à d'autres technologies : il s'agit tout simplement de penser à du code qui peut être utilisé, avec des adaptations, dans plusieurs applications possibles.
+
+                    Dans le cas du code normal, le développeur a comme objectif directe une application spécifique, par exemple une application drag&drop qui permet de mettre en ordre les planètes en fonction de leur ordre par rapport au soleil.
+                    
+                    Dans le cas du code réutilisable, le développeur veut plutôt mettre à disposition d'autres développeurs du code qu'ils peuvent intégrer dans leurs applications. En gardant le même exemple, un développeur peut construire une bibliothèque JavaScript qui permet de faire du drag&drop (voir par exemple jQuery UI). Donc il conçoit du code qui peut être adapté par la suite par un autre développeur à la disposition des planètes, à traîner un produit dans le shopping cart d'un site de e-commerce, etc.
+                    
+                    En d'autres termes, les bibliothèques JavaScript ne permettent pas de faire des choses qu'on ne pourrait pas faire avec du vanilla JavaScript. Au contraire, les bibliothèques JavaScript utilisent dans la plupart des cas du vanilla JavaScript. Dans d'autres cas, on a des bibliothèques qui sont construites à partir d'autres bibliothèques.                </p>
+                <p>
+                    Cependant, être à l'aise avec JavaScript est plus dur que de l'être avec HTML ou CSS. Vous pourrez démarrer petit et continuer à travailler par petites étapes de façon soutenue. Pour commencer, nous allons vous montrer comment ajouter un JavaScript basique à votre page, en créant un exemple « Hello world ! » (la norme en matière d'exemples de programmation de base).
+                </p>
+                <div class="image">
+                    <img src="images/Librairie.png" alt="exemple librairie">
+                </div>
+                <h2 id="titre2">Une nouvelle API</h2>
+                <p>
+                    L'organisation du code se fait à travers une nouvelle Application Programming Interface] (API) qui s'ajoute à l'API standard du vanilla JavaScript. Pour rappel, une API consiste dans l'intégralité des instructions qu'un développeur peut utiliser pour construire son code. Lorsque vous ajoutez une bibliothèque JavaScript à votre projet, vous intégrez le code de cette bibliothèque et par conséquent son API. Un exemple peut contribuer à expliquer ce principe.
+                </p>
+               
+                <h2 id="titre3">Quelques exemples comme c'est beau</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, labore necessitatibus magnam, quas voluptatibus odit esse ea veritatis deleniti soluta aut culpa debitis, inventore distinctio veniam sit similique adipisci. Nobis?
+                </p>
+                <iframe title="Exemple Librairie Nasa" width="500" height="500" 
+                src="https://eyes.nasa.gov/apps/mars2020/#/home">
+                </iframe>
+                <br>
+                <iframe title="Exemple Librairie" width="500" height="900"
+                src="https://3dcomic.shop/inkbots/s01e01/"></iframe>
+        </article>
+    </main>
+
+    <footer>
+        <ul id="ulFoot">
+            <li class="liFoot">
+                <h1 class="h1Foot">ADRAR FORMATION (SIÈGE)</h1>
+                <p>
+                    2 Rue Irène Joliot Curie Parc Technologique du Canal
+                    <br>31520 Ramonville Saint Agne
+                    <br>Tél. : 05 62 19 20 80
+                    <br>adrarinfo@adrar-formation.com
+                </p>
+            </li>
+            <li class="liFoot">
+                <h1 class="h1Foot">ADRAR PÔLE NUMÉRIQUE</h1>
+                <p>
+                    11 avenue de l'Europe
+                    <br>31520 Ramonville Saint Agne
+                    <br>Tél: 05 34 31 38 10
+                    <br>polenumerique@adrar-formation.com
+                </p>
+            </li>
+            <li class="liFoot">
+                <a href="https://www.adrar-formation.com/formations-metiers-numeriques" class="aFoot">Pôle Numérique</a>
+                <br>
+                <a href="https://www.adrar-formation.com/contact" class="aFoot">Nous contacter</a>
+            </li>
+            <li class="liFoot">
+                <h1 class="h1Foot">Contact</h1>
+                <p>info</p>
+            </li>
+        </ul>
+</footer>
+</body>
+</html>

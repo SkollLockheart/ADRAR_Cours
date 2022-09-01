@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./TAF_style.css">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte Html</title>
+</head>
+<body>
+    <header>
+        <div class="page_nav">
+                <a href="./TAF_index.html" style="text-decoration:none"><img src="images/LogoTaf.png" id="logoTop"></a>
+                <nav id="navHead">
+                    <ul id="ulHead">
+                        <li class="liHead"><a href="./TAF_index.html" style="text-decoration:none">CYBERDEV ADRAR</a></li>
+                        <li class="liHead"><a href="./TAF_html.html" style="text-decoration:none">HTML</a></li>
+                        <li class="liHead"><a href="./TAF_css.html" style="text-decoration:none">CSS</a></li>
+                        <li class="liHead"><a href="./TAF_js.html" style="text-decoration:none">JAVASCRIPT</a></li>
+                        <li class="liHead"><a href="./TAF_librairie.html" style="text-decoration:none">Librairie API/JS</a></li>
+                            <li class="miniJeu">
+                                <a id="miniJeu" href="TAF_miniJeux.html"> MINI-JEUX</a>
+                                <div class="jeu">
+                                    <a href="https://www.codemonkey.com/" style="text-decoration:none" class="listJeu">CODEMONKEY</a>
+                                    <a href="https://www.codingame.com/start" style="text-decoration:none" class="listJeu">CODINGAME</a>
+                                    <a href="https://flukeout.github.io/" style="text-decoration:none" class="listJeu">CSS DINER</a>
+                                    <a href="http://flexboxfroggy.com/" style="text-decoration:none" class="listJeu">FLEXBOX FROGGY</a>
+                                </div>
+                            </li>
+                       
+                       
+                        <li><button type="button" id="buttonHead"><a href="https://www.adrar-formation.com/contact%22%3E" style="text-decoration:none">CONTACT</a></button></li>
+                        
+                    </ul>
+                </nav>
+        </div>
+        <div id="backImg">
+            <img src="images/TP TAF BACKGROUND.png" id="imgDeFond">
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>Présentation HTML</h1>
+            <div>
+                <p> HTML signifie « HyperText Markup Language » qu'on peut traduire par « langage de balises pour l'hypertexte ». Il est utilisé afin de créer et de représenter le contenu d'une page web et sa structure. D'autres technologies sont utilisées avec HTML pour décrire la présentation d'une page (CSS) et/ou ses fonctionnalités interactives (JavaScript).</p>
+            </div>
+            <div class="image">
+                <img src="images/html5.png" alt="Logo HTML5">
+            </div> 
+            <div>
+                <p>
+                    L'« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d'un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web. Ce sont eux qui forment cette « toile » (ce mot est traduit par web en anglais). En téléchargeant du contenu sur l'Internet et en le reliant à des pages créées par d'autres personnes, vous devenez un participant actif du World Wide Web.
+                </p>
+                <br>
+                <p>
+                    Le langage HTML utilise des « balises » pour annoter du texte, des images et d'autres contenus afin de les afficher dans un navigateur web. Le balisage HTML comprend des « éléments » spéciaux tels que &lt;head>, &lt;title>, &lt;body>, &lt;header>, &lt;footer>, &lt;article>, &lt;section>, &lt;p>, &lt;div>, &lt;span>, &lt;img>, &lt;aside>, &lt;audio>, &lt;canvas>, &lt;datalist>, &lt;details>, &lt;embed>, &lt;nav>, &lt;output>, &lt;progress>, &lt;video>, &lt;ul>, &lt;ol>, &lt;li> et bien d'autres. 
+                </p>
+                <br>
+                <p>
+                    En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux. Autrement dit, la balise title pourrait très bien être écrite comme Title, TiTle ou d'une autre façon.
+                </p>
+                <br>
+                <p>
+                    Les articles suivants fournissent des éléments de référence utiles au développement web.
+                </p>
+                
+                <div id="sommaire">
+                    <p id="titre_sommaire">Sommaire</p>
+                    <ul>
+                        <li><a href="#titre1" class="sommaire">Anatomie d'un élément HTML</a></li>
+                        <li><a href="#titre2" class="sommaire">Titre HTML</a></li>
+                        <li><a href="#titre3" class="sommaire">Autre titre HTML</a></li>
+                    </ul>
+                </div>
+                <h2 id="titre1">
+                    Anatomie d'un élément HTML
+                </h2>
+                <p>
+                    Regardons de plus près cet élément paragraphe :
+                </p>
+                <br>
+                <div class="image">
+                    <img src="images/chat_grincheux.png" alt="exemple code HTML chat_grincheux" width="50%" height="50%">
+                </div>
+                <h4>
+                    Les composants principaux de notre élément sont : 
+                </h4>
+                <br>
+                <ol>
+                    <li>
+                        La balise ouvrante : celle-ci se compose du nom de l'élément (ici « p »), entre deux chevrons. Cela indique le début de l'élément, soit l'endroit à partir duquel celui-ci prend effet. Pour notre exemple, cela indique le début du paragraphe.
+                    </li>
+                    <br>
+                    <li>
+                        La balise fermante : ici on a également des chevrons et le nom de l'élément, auxquels on ajoute une barre oblique avant le nom de l'élément. Cela indique la fin de l'élément. Pour notre exemple, cela indique la fin du paragraphe. Oublier la balise fermante est une erreur courante de débutant et peut conduire à de curieux résultats.
+                    </li>
+                    <br>
+                    <li>
+                        Le contenu : C'est le contenu de l'élément. Ici, c'est simplement du texte.
+                    </li>
+                    <br>
+                    <li>
+                        L'élément : Il est composé de la balise ouvrante, de la balise fermante et du contenu.
+                    </li>
+                </ol>
+                <br>
+                <h2 id="titre2">Titre HTML </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta quasi, quibusdam, laboriosam expedita minus omnis vero nemo, ad beatae a rerum voluptatem corrupti perspiciatis fuga? Suscipit, veritatis! Officia, expedita.</p>
+                <br>
+                <h2 id="titre3">Autre titre HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, veritatis error itaque atque laudantium deserunt temporibus doloribus quo quibusdam perferendis debitis nihil nisi provident aliquid doloremque minima dolores. Et, culpa?</p>
+            </div> 
+        </article>
+    </main>
+
+    <footer>
+            <ul id="ulFoot">
+                <li class="liFoot">
+                    <h1 class="h1Foot">ADRAR FORMATION (SIÈGE)</h1>
+                    <p>
+                        2 Rue Irène Joliot Curie Parc Technologique du Canal
+                        <br>31520 Ramonville Saint Agne
+                        <br>Tél. : 05 62 19 20 80
+                        <br>adrarinfo@adrar-formation.com
+                    </p>
+                </li>
+                <li class="liFoot">
+                    <h1 class="h1Foot">ADRAR PÔLE NUMÉRIQUE</h1>
+                    <p>
+                        11 avenue de l'Europe
+                        <br>31520 Ramonville Saint Agne
+                        <br>Tél: 05 34 31 38 10
+                        <br>polenumerique@adrar-formation.com
+                    </p>
+                </li>
+                <li class="liFoot">
+                    <a href="https://www.adrar-formation.com/formations-metiers-numeriques" class="aFoot">Pôle Numérique</a>
+                    <br>
+                    <a href="https://www.adrar-formation.com/contact" class="aFoot">Nous contacter</a>
+                </li>
+                <li class="liFoot">
+                    <h1 class="h1Foot">Contact</h1>
+                    <p>info</p>
+                </li>
+            </ul>
+    </footer>
+</body>
+</html>

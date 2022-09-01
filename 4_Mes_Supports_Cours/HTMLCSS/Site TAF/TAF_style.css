@@ -1,0 +1,240 @@
+body{
+    display: flex;
+    font-size: .9em;
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #111;
+    background: #ffffff;
+    height: 100vh;
+    flex-direction: column;
+}
+
+:root{
+    --clr-jaune:#ffcd00;
+}
+
+#imgDeFond{
+    display: flex;
+    align-items: center;
+    margin:auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    
+}
+
+#menu{
+    text-decoration: none;
+    margin-left: 25%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    
+}
+
+#logoTop{
+    position: absolute;
+    width: 10%;
+    height: 19%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+.listJeu{
+    color: #111;
+    font-weight: bold;
+    font-size: 12px;
+}
+.listJeu:hover{
+    color: #8f0123;
+}
+
+header{
+    display:block;
+
+}
+
+.page_nav{
+    display:block;
+}
+
+
+#ulHead{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 286px;
+    padding-top: 20px;
+}
+
+#navHead{
+    width:auto;
+    align-items:flex-end;
+    text-decoration: none;
+    padding-right: 20%;
+    
+}
+
+.liHead{
+    font-size: 1000;
+    font-weight:bolder;
+}
+
+#miniJeu{
+    color:black;
+}
+
+#buttonHead{
+    display: inline-block;
+    background-color: var(--clr-jaune);
+    border-radius: 20px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bolder ;
+    text-decoration: none;
+}
+
+.miniJeu:hover .jeu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border: #111 solid .5px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-left: -15px;
+    box-shadow:#111 2px 2px 5px;
+   
+}
+
+.jeu{
+    display:none;
+    
+}
+
+/* SHARLENE */
+
+.image, .CSSDINER{
+    display: flex;
+    justify-content: center;
+    
+}
+
+img {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+main{
+    display: flex;
+    margin-left: 20% ;
+    margin-right: 20%;
+    padding:10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -50px;
+    margin-bottom: 20px;
+
+}
+
+h1, h2, #titre_sommaire{
+    border-bottom: solid;
+    border-color: #ffcd00;
+    width:fit-content;
+}
+h1{
+    font-size: xx-large;
+}
+h2{
+    font-size: x-large;
+}
+::selection{
+    background: #8f0123;
+    color: white;
+}
+
+#sommaire{
+    background-color:#f3f6f9;
+    border-radius: 20px;
+    padding:10px 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.sommaire{
+    color:#111;
+    text-decoration: none; 
+    font-weight: bold;
+}
+.sommaire:hover{
+    color: #8f0123;
+    text-decoration: underline;
+}
+
+h3,h4{
+    font-weight: bold;
+}
+
+ol{
+    list-style-type:decimal;
+    margin-left: 30px;
+}
+
+.CSSDINER{
+    display: flex;
+    flex-direction: column;
+}
+
+embed{
+    margin-left: 50px ;
+}
+
+iframe{
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* SEB */
+footer{
+    width: auto;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.829);
+
+    
+}
+
+#ulFoot{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+    color: white;
+    margin: 0 --1em;
+}
+
+.liFoot{
+    margin: 25px;
+    width: 25%;
+}
+
+.h1Foot{
+    font-size: 15px;
+}
+
+.aFoot{
+    color: white;
+}
+.aFoot:hover{
+    color: #ffcd00;
+}
+
