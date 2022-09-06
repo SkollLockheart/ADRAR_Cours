@@ -1,0 +1,34 @@
+@media only screen and (max-device-width : 1024px){
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: row;
+        height: 100px;
+    }
+    article div{
+        flex-direction: column;
+    }
+    .galerie{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #container :first-child{
+        align-self: stretch;
+    }
+    section :nth-child(2) div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    nav ul li a {
+        display: block;
+        height: 100%;
+    }
+
+}

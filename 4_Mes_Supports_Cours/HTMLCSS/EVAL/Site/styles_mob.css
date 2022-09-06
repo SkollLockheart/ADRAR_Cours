@@ -1,0 +1,79 @@
+@media only screen and (max-width : 575px) {
+    #infoBarre{
+        position: fixed;
+        flex-wrap: wrap;
+    }
+
+    #infoBarre p{
+        padding: 1%;
+    }
+
+    header{
+        height: 20vh;
+    }
+    
+    h1{
+        padding-top: 6vh;
+        margin-left: 5%;
+    }
+
+    #navHead{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #iconeHead{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .imgHead{
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #artPrinc{
+        width: auto;
+        padding: 0;
+    }
+
+    #artTop{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #artBot{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h3{
+        padding-top: 3vh;
+    }
+
+    #mainPlaid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainPlaid :nth-child(1){order:3;}
+
+}

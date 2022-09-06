@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_mob.css">
+    <title>Notre Plaid</title>
+</head>
+<body>
+    <div id="infoBarre">
+        <p>Attention : En raison de la situation liée au Covid, les délais de livraison peuvent varier entre 3 jours et 3 semaines.</p>
+    </div>
+    <header>
+        <h1>Chill'Us</h1>
+        <div id="navHead">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Notre Plaid</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+            <div id="iconeHead">
+                <img src="images/icon_compte.png" class="imgHead">
+                <img src="images/icon_panier.png" class="imgHead">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="mainPlaid">
+            <ul id="navArticle">
+                <li class="liArticle">Carnet</li>
+                <li class="liArticle">Mug</li>
+                <li class="liArticle">Fondu au Chocolat</li>
+            </ul>
+            <div id="previous">
+                <img id="imgGrand" src="images/plaid-01.jpg" alt="couple">
+                <div id="imgPetit">
+                    <img class="imgPetit" src="images/plaid-02.jpg" alt="plaid bleu">
+                    <img class="imgPetit" src="images/plaid-03.jpg" alt="plaid rouge">
+                    <img class="imgPetit" src="images/plaid-04.jpg" alt="plaid noire">
+                </div>
+            </div>
+            <div id="description">
+                <h3>Plaid à Capuche</h3>    
+                <h4 id="prix">44,50€</h4>
+                <p>
+                    Doux et chaud, le plaid Scotland vous fera sentir comme dans un cocon pendant les soirées d’hivers.
+        Ses grandes poches accueilleront avec plaisir votre livre préféré. Sa capuche vous fera
+        confortablement entrer dans votre bulle. Ainsi, tel un chat, blottissez-vous au creux de vos coussins
+        ou contre votre partenaire, et laissez vagabonder votre esprit.
+                </p>
+                <p><strong>Taille:</strong> Unique - convient à toutes les morphologies</p>
+                <p><strong>Matériaux:</strong> 100% Polyester</p>
+                <input type="submit" value="Ajouter au Panier" id="ajtPanier">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Contactez-Nous</h2>
+        <form method="post" action="">
+            <div id="champ">
+                <input type="text" size="30" name="nom" placeholder="Nom" minlength="2" maxlength="20" id="nom">
+                <br>
+                <input type="text" size="30" name="prenom" placeholder="Prénom" minlength="2" maxlength="20" id="prenom">
+                <br>
+                <input type="email" size="30" name="email" placeholder="Mail" id="email">
+            </div>
+            <div id="sendCom">
+                <textarea name="com" id="com" cols="50" rows="7"></textarea>
+                <br>
+                <input type="submit" value="Envoyer" id="buttom">
+            </div>
+        </form>
+    </footer>
+</body>
+</html>
