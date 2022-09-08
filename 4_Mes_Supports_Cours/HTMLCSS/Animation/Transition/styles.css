@@ -1,0 +1,65 @@
+h1{
+    color: red;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+h1:hover{
+    color: green;
+}
+
+p{
+    transition-timing-function: linear;
+    transition-duration: 10s;
+}
+
+p:active{
+    transform: rotate(2turn);
+    color: blue;
+    font-size: 5vw;
+}
+
+#etang{
+    width: 40em;
+    position: absolute;
+}
+
+#frog{
+    position: absolute;
+    z-index: 2;
+    width: 8em;
+    transform: translateY(200px);
+    animation: jumpfrog 10s infinite;
+}
+
+@keyframes jumpfrog{
+    0% {
+        transform: translateX(0px) translateY(200px);
+    }
+    12.5%{
+        transform: translateX(100px) translateY(150px);
+    }
+    25%{
+        transform: translateX(200px) translateY(200px);
+    }
+    37.5%{
+        transform: translateX(300px) translateY(150px);
+    }
+    50%{
+        transform: translateX(400px) translateY(200px);
+    }
+    62.5%{
+        transform: translateX(300px) translateY(150px);
+    }
+    75%{
+        transform: translateX(200px) translateY(200px);
+    }
+    87.5%{
+        transform: translateX(100px) translateY(150px);
+    }
+    100%{
+        transform: translateX(0px) translateY(200px);
+    }
+}
+
+

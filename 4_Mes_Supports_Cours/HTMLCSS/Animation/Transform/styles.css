@@ -1,0 +1,22 @@
+img{
+    margin: 150px;
+}
+
+#img1:hover{
+    transform: scale(2);
+}
+#img1:active{
+    transform: rotate(180deg);
+}
+
+#img2:hover{
+    transform: skewX(40deg);
+}
+
+#img2:active{
+    transform: translateX(200px);
+}
+
+p{
+    transform: scale(.5) translateX(20px) rotate(35deg) skewY(10deg);
+}
