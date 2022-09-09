@@ -1,0 +1,13 @@
+@media screen and (max-width:575px) {
+    main section:first-child{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        margin-left: 5%;
+    }
+    footer{
+        flex-direction: column-reverse;
+        align-items:  center;
+    }
+}
