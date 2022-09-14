@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("font/PROXON.ttf");
+}
+body {
+  font-family: Roboto;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background-image: url(/images/sky.png);
+}
+nav img {
+  width: 5vw;
+  padding: 0.5vw;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-self: center;
+}
+nav li {
+  padding-left: 3vw;
+}
+nav a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+nav a:hover {
+  -webkit-text-stroke: 0.1px rgb(49, 48, 48);
+}
+
+#card1 {
+  display: flex;
+  align-items: center;
+  border: solid rgb(98, 140, 175) 5px;
+  background-image: url(/images/back_card.png);
+  border-radius: 10px;
+  width: 60vw;
+  margin: 5vw;
+}
+#card1 img {
+  width: 20vw;
+  border-radius: 3px;
+}
+#card1 div {
+  margin-left: 5vw;
+}
+#card1 h1 {
+  font-size: 5em;
+}
+#card1 h3 {
+  font-size: 1em;
+  color: rgb(51, 51, 51);
+  padding: 1em;
+}
+#card1 h2 {
+  font-size: 2em;
+}/*# sourceMappingURL=style.css.map */

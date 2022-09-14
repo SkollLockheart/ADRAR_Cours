@@ -1,0 +1,13 @@
+$fond: yellow;
+
+@import "variables.scss";
+
+div{
+    background-color: $fond;
+    p{
+        color: white;
+    }
+    :hover{
+        color: salmon;
+    }
+}
