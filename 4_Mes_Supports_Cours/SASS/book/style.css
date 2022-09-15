@@ -25,6 +25,10 @@ nav ul {
   padding-bottom: 10px;
   padding-left: 20px;
 }
+nav li {
+  color: white;
+  font-weight: bold;
+}
 nav a {
   color: white;
   font-size: x-large;
