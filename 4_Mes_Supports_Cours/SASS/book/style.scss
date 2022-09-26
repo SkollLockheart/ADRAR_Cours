@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+body{
+    background-color: rgb(222, 211, 226);
+}
+
 nav{
     display: flex;
     align-items: flex-end;
@@ -35,18 +39,34 @@ nav{
 }
 
 main{ 
-    section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #card{
+        background-color: whitesmoke;
         display: flex;
         justify-content: center;
-        padding-top: 20px;
+        margin-top: 20px;
+        width: 40vw;
+        border: solid black 5px;
+        justify-content: space-between;
         img{
             width: 20vw;
+
         }
         div{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    #galerie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            width: 500px;
         }
     }
 }
