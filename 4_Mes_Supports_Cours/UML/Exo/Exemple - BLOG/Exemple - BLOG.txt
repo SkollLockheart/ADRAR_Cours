@@ -1,0 +1,17 @@
+Example 01 : Site Blog
+Acteur 1 - Admin :
+    + Créer, modifier et supprimer un article
+    + Supprimer un commentaire
+    + Supprimer un compte
+
+Acteur 2 - Internaute :
+    + Créer, modifier, et supprimer son compte
+
+Acteur 3 - Lecteur (Héritage pour les 2 précédents) :
+    + Afficher les articles
+    + Afficher un compte
+    + Créer, Modifier et Afficher un commentaire
+    + Se connecter / se déconnecter
+
+Extend :
+    + Importer une image si Créer un compte

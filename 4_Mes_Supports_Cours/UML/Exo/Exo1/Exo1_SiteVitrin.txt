@@ -1,0 +1,15 @@
+Exercice 1 - Site Vitrine :
+
+Créer le diagramme de cas d'utilisation du 
+sujet ci-dessous :
+Un client nous demande la réalisation d'un 
+site vitrine pour son entreprise.
+Ce site web comprendra une partie blog avec 
+gestion des articles.
+La présentation de l'entreprise
+La présentation des produits et services de 
+l'entreprise
+Notre client s'occupera de la partie 
+administration du site (articles, produits ...)
+Les visiteurs auront la possibilité de s'identifier 
+et poster des commentaires
