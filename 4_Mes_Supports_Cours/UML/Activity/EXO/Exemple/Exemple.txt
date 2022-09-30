@@ -1,0 +1,14 @@
+Example 01 : Créer un Compte
+1) Demande de création de compte
+
+2) Demander les informations utilisateurs
+
+3) Entrer les informations utilisateurs et Valider
+
+4) Vérifier les informations utilisateurs
+
+5A) Incorrect -> Message d'Erreur = FIN
+
+5B) OK -> Fork
+    -> Créer le Compte (FIN)
+    -> Envoyer message de validation (FIN)

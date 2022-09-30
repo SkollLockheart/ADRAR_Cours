@@ -1,0 +1,13 @@
+Exercice 01  Faire le diagramme d'activité de la connexion à un compte
+
+Exercice 02  Faire le diagramme d'activité de la modification d'une session
+
+Exercice 03  Faire le diagramme d'activité de la création d'une session
+
+Exercice 04  Faire le diagramme d'activité de l'affichage d'une session
+
+Exercice 05  Faire le diagramme d'activité de la suppression d'une session
+
+Exercice 06  Faire le diagramme d'activcité de la suppression d'un compte
+
+Exercice 07  Faire le diagramme d'activité de la création d'une attraction

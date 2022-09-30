@@ -1,0 +1,11 @@
+Exercice 3 à me rendre avant la pause : Parc d'Attraction
+
+Un Parc d'Attraction souhaite un site internet pour se faire connaître et gérer de la vente en ligne. Voici les fonctionnalités que le gestionnaire du parc attend :
+
+Le gestionnaire doit pouvoir :
+    - promouvoir une nouvelle attraction, en y faisant figurer les dates d'ouvertures et le nombre de place disponible pour chaque date
+    - participer aux commentaires sur les attraction et les modérer si besoin
+
+Les Visiteurs doivent pouvoir :
+    - voir les attractions, les commenter et leur donner une note
+    - effectuer une réservation vis à vis d'une attraction, et la modifier si nécessaire
