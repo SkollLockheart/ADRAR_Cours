@@ -1,0 +1,2 @@
+Réaliser le diagramme de séquence créer un compte (utilisateur) :
+-Ajouter le ou les scénario alternatif et d'erreur du cas d'utilisation.
