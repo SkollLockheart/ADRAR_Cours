@@ -1,0 +1,2 @@
+Réaliser le diagramme de séquence supprimer un article du blog (administrateur) :
+-en incluant le ou les scénario alternatifs et d'erreurs.

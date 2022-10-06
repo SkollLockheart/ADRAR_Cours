@@ -1,0 +1,2 @@
+Réaliser le diagramme de séquence modifier un compte utilisateur :
+-en intégrant le ou les  scénario alternatif et d'erreur.

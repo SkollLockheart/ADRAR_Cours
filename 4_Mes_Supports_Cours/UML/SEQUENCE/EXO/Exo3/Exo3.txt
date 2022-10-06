@@ -1,0 +1,2 @@
+Réaliser le diagramme de séquence afficher un article du blog (utilisateur) :
+-en incluant le ou les scénario alternatifs et d'erreurs
