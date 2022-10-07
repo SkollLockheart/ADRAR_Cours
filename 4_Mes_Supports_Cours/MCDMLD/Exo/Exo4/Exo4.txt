@@ -1,0 +1,9 @@
+Exercice 4 :
+
+L’entreprise Adnum souhaite gérer plus facilement le flux des achats de matières premières de l’entreprise et de vente des produits finis.
+- Chaque utilisateur qui se connectera aura un login, mot de passe et un droit différent.
+- La matière première (nom, prix achat, quantité en stock) est achetée à un fournisseur (nom, téléphone, adresse, pays)
+- Elle sera utilisée pour la fabrication d’un produit finis (nom, prix de vente, quantité en stock, type).
+- Un produit finis est destiné à un client (nom, adresse, téléphone, pays).
+- Les commerciaux de l’entreprise (nom, prénom, téléphone) sont rattachés à un ensemble de produits finis qu’ils devront promouvoir auprès de futur client.
+- L’entreprise souhaite conserver le lien entre le commercial et les clients qu’il aura fidélisé, le chiffre d’affaire total.

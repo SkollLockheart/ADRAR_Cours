@@ -1,0 +1,11 @@
+Exercice 6 :
+
+Nous avons besoin d'un outil pour gérer un festival médiéval.
+- Les visiteurs (nom, prénom, adresse, téléphone, mail, login, mot de passe) pourront y acheter un pass journée, un pass week-end, ou un pass semaine.
+L'outil leur présentera alors :
+- les Spectacles (nom, date, heure de début, heure de fin, description) mettant en scènes des artistes (nom, prénom)
+- les Commerçant (nom, prénom, enseigne, description) proposant différents produits (nom, prix, description)
+- les activités (nom, date, heure de début, heure de fin, description) dirigé par des animateurs
+Les visiteurs pourront réserver leur place à l'avance pour assister à un spectacle ou participer à une activité
+Les visiteurs pourront aussi donner une note à chaque spectacle, commerçant et activité, accompagné ou non d'un commentaire
+Les visiteurs pourront aussi acheter des produits aux commerçant en ligne en passant par un ticket de caisse (date, état de la livraison) qui servira à identifier la transaction
