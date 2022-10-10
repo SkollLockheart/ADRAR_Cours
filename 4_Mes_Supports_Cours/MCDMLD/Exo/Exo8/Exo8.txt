@@ -1,0 +1,7 @@
+Exercice 8 :
+Une plateforme de gestion de partie de jeu d'histoire en ligne.
+Sur cette plateforme :
+- Les joueurs (nom, prenom, mail, login, password) peuvent céer des salons de jeu (nom du salon). Un joueur qui crée un salon devient le maître du jeu de ce salon.
+- Plusieurs joueurs peuvent rejoindre un salon. Ils se créent alors un unique personnage (nom, prenom, description) par salon, dont ils raconteront les aventures ensemble.
+- Les joueurs peuvent se créer une liste d'ami
+- Les joueurs peuvent aussi s'envoyer des messages entre eux (objet du message, corps du texte)

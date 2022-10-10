@@ -1,0 +1,7 @@
+Exercice 10 :
+Nous avons besoin d'une plateforme permettant de mettre en relation des prestataires artistiques et des clients. Il devra permettre :
+- à des utilisateurs (login, mot de passe) de la plateforme de se connecter
+- à chaque utilisateur d'avoir un rôle précis (artiste, client)
+- à des Artistes (nom, prénom, langue parlée, pays) de proposer des prestations (nom, description, prix) appartenant à différente catégorie (musique, graphisme, illustration, vidéo, ...)
+- à des Clients (nom, prénom) de passer commande pour des prestations
+- les Clients peuvent aussi contacter les Artistes par message et obtenir une réponse d'eux 
