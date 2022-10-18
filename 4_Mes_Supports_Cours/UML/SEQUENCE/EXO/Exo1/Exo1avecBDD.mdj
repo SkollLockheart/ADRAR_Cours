@@ -635,7 +635,7 @@
 									"font": "Arial;13;0",
 									"left": 315,
 									"top": 132.5,
-									"width": 90.20263671875,
+									"width": 89,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNC91HcdMAg="
@@ -1108,7 +1108,7 @@
 									"font": "Arial;13;0",
 									"left": 298.5,
 									"top": 52.5,
-									"width": 127.787109375,
+									"width": 127,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNENw3e0dlQ="
@@ -1581,7 +1581,7 @@
 									"font": "Arial;13;0",
 									"left": 327,
 									"top": 268.5,
-									"width": 111.1435546875,
+									"width": 111,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNFH/Hjx/nk="
@@ -2054,7 +2054,7 @@
 									"font": "Arial;13;0",
 									"left": 281,
 									"top": 404.5,
-									"width": 157.3671875,
+									"width": 156,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNIaZ38hve4="
@@ -2452,7 +2452,7 @@
 									"font": "Arial;13;0",
 									"left": 293,
 									"top": 516.5,
-									"width": 178.34619140625,
+									"width": 178,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNM3uIMWn+Q="
@@ -2651,7 +2651,7 @@
 									"font": "Arial;13;0",
 									"left": 291.5,
 									"top": 332.5,
-									"width": 170.4052734375,
+									"width": 169,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNPVdohghqw="
@@ -3124,7 +3124,7 @@
 									"font": "Arial;13;0",
 									"left": 310,
 									"top": 580.5,
-									"width": 105.37353515625,
+									"width": 105,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNQXH4zICx0="
@@ -4419,7 +4419,7 @@
 									"font": "Arial;13;0",
 									"left": 643,
 									"top": 252.5,
-									"width": 119.05908203125,
+									"width": 118,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNUfaKyXY5Q="
@@ -4618,7 +4618,7 @@
 									"font": "Arial;13;0",
 									"left": 632.5,
 									"top": 324.5,
-									"width": 155.93896484375,
+									"width": 155,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNVGqbDOBwY="
@@ -4817,7 +4817,7 @@
 									"font": "Arial;13;0",
 									"left": 648,
 									"top": 404.5,
-									"width": 114.7490234375,
+									"width": 114,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNVfWbKUllc="
@@ -5016,7 +5016,7 @@
 									"font": "Arial;13;0",
 									"left": 697.5,
 									"top": 540.5,
-									"width": 122.68994140625,
+									"width": 122,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnNV7KLRyxHo="
@@ -6769,7 +6769,7 @@
 									"font": "Arial;13;0",
 									"left": 305.5,
 									"top": 188.5,
-									"width": 121.2490234375,
+									"width": 120,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGDnN2zDbtZIIM="
@@ -12428,7 +12428,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnS0APKetGRs="
 					},
-					"name": "Role1"
+					"name": "Role1",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -12436,7 +12437,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnS0APKetGRs="
 					},
-					"name": "Role2"
+					"name": "Role2",
+					"type": ""
 				}
 			]
 		},
@@ -13639,7 +13641,7 @@
 									"top": 984,
 									"width": 313,
 									"height": 129,
-									"text": "(4) Scénario alternatif informations incorrectes\n4.1 Le SI indique à l'utilisateur que les informations sont incorrectes\n4.2 Retour au point (2) demander les informations.\n4.3 Utilisateur saisi les informations.\nDans le scénario nominal on considére que les informations sont correctes"
+									"text": "(4) Scénario alternatif informations incorrectes\n4.1 Le SI indique à l'utilisateur que les informations sont incorrectes\n4.2 Retour au point (2) demander les informations.\n4.3 Utilisateur saisi les informations.\nDans le scénario nominal on considère que les informations sont correctes"
 								},
 								{
 									"_type": "UMLNoteView",
@@ -15104,7 +15106,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDncdnWasUAC8="
 					},
-					"name": "Role1"
+					"name": "Role1",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -15112,7 +15115,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDncdnWasUAC8="
 					},
-					"name": "Role2"
+					"name": "Role2",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -15120,7 +15124,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDncdnWasUAC8="
 					},
-					"name": "Role3"
+					"name": "Role3",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -15128,7 +15133,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDncdnWasUAC8="
 					},
-					"name": "Role4"
+					"name": "Role4",
+					"type": ""
 				}
 			]
 		}
