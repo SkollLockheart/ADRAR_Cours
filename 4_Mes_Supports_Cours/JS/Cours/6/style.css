@@ -1,0 +1,13 @@
+.maCouleur{
+    color: green;
+    background-color: red;
+}
+
+h2, h3{
+    display: none;
+    color: red;
+}
+
+.block{
+    display: block;
+}
