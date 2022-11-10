@@ -23,9 +23,9 @@ monForm.addEventListener('submit',(event)=>{
 let monTxt = document.querySelector('textarea');
 let rendu = document.querySelector('div');
 
-monTxt.addEventListener('keyup',()=>{
-    rendu.innerHTML = marked(monTxt.value);
-})
+// monTxt.addEventListener('keyup',()=>{
+//     rendu.innerHTML = marked(monTxt.value);
+// });
 
 // Exo LOCALSTORAGE
 
@@ -35,10 +35,28 @@ monTxt.addEventListener('keyup',()=>{
 // TODO 3: à la valeur contenue dans monTxt on assigne localStorage, sur localStorage on utilise la fonction getItem("monSuperTexte")
 // TODO 4-1: ensuite, SI la valeur dans monTxt est définie,
 // TODO 4-2: alors on assigne au innerHTML de rendu, localStorage sur lequel on utilise la fonction getItem("monSuperTexte")
-// TODO 5-1: Sur monTxt on place un addEventListener qui surveillle le clavier et exécute une fonction
+// TODO 5-1: (en dehors du IF)Sur monTxt on place un addEventListener qui surveillle le clavier et exécute une fonction
 // TODO 5-2: Dans cette fonction, sur localStorage on utilise la fonction setItem
 // TODO 5-3: setItem() prend en 1er param "monSuperTexte", et en 2e param la valeur contenue dans monTxt
 // TODO 5-4: on assigne au innerHTML de rendu la valeur contenue dans monTxt
 
-localStorage.setItem('monSuperTexte',monTxt.value);
+monTxt.value = localStorage.getItem('monSuperTexte');
+
+if(monTxt.value==true){
+    rendu.innerHTML = localStorage.getItem('monSuperTexte')
+};
+
+monTxt.addEventListener('keyup',()=>{
+    localStorage.setItem('monSuperTexte', monTxt.value);
+    rendu.innerHTML = monTxt.value;
+});
+
+
+//!------------Supprimer un listener d'evenements--------------
+const leLink = document.querySelector('a');
+function monClic(){
+    console.log('Hello Ca Clique');
+    leLink.removeEventListener('click',monClic);
+};
+leLink.addEventListener('click',monClic);
 

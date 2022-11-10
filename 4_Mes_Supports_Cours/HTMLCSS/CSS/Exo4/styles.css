@@ -10,7 +10,7 @@ div,p{
 }
 
 #div2{
-    background-image: linear-gradient(-70,yellow 0%,indigo 75%);
+    background-image: linear-gradient(to right, yellow 0%,indigo 75%);
 }
 
 p{
