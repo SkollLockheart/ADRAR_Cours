@@ -1,0 +1,13 @@
+* {
+    transition: 1s;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 120px;
+    opacity: 0;
+}
+
+h3{
+    cursor:pointer;
+}

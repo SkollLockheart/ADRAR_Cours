@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API fetch()</title>
+    <script src="app.js" defer></script>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(65, 154, 154);
+        color: white;
+    }  
+    h1{
+        transform: rotate(5deg);
+    }
+    h4{
+        transform: rotate(5deg);
+        font-size: 5em;
+    }
+    #counter{
+        font-size: 8em;
+        margin: 0;
+        filter: blur(31px);
+        transition: 200ms;
+    }
+    #pokemon{
+        font-size: 5em;
+        margin: 0;
+        filter: blur(31px);
+        transform: rotate(-3deg);
+        transition: 200ms;
+        text-transform: uppercase;
+    }
+    img {
+        filter: blur(31px);
+        width: 25em;
+    }
+        </style>
+<body>
+    <h1>COMPTEUR : </h1>
+    <h2 id="counter">0</h2>
+    <h4>Who is that pokemon !?</h4>
+    <h3 id="pokemon">It's Pikachu !</h3>
+    <img src="" alt="">
+
+</body>
+</html>
