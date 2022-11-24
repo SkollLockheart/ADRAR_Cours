@@ -2,13 +2,23 @@
     margin: 0px;
     padding: 0px;
 }
+
 header{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     background-color: #6F0B15;
     z-index: 100;
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
+    padding: 3em 8em;
+    height: 100px;
+}
+#logo{
+    position: absolute;
+    left: 5%;
+    top: 5%;
 }
 a{
     text-decoration: none;
@@ -16,44 +26,114 @@ a{
 }
 h1{
     font-family: 'Amsterdam Four_ttf';
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2cm ;
+}
+h2{
+    font-family: 'Amsterdam';
+    text-align: center;
+    color: #6F0B15;
+    font-size: 1cm ;
+}
+h3{
+    font-family: 'Amsterdam Four_ttf';
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 1cm ;
 }
 body{
     font-family:'Andika Basic';
-}
-h1{
-    text-align: center;
+    background: linear-gradient(#6F0B15 5%, white 40%);
 }
 p{
     display: flex;
     justify-content: center;
+    font-size: .7cm;
 }
 ul{
-    width: 100%;
     display: flex;
     text-align: center;
 }
 li{
     list-style-type: none;
-    padding-right: 20px;
+    padding-right: 50px;
     color: white;
+    font-size: 3ch;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 95%;
+    border-radius: 25px ;
+    align-items: center;
+
 }
 section{
-    margin-bottom: 75px;
-    padding-top: 75px;
+    padding-top: 175px;
+}
+#enTete{
+    padding-top: 30px;
 }
 #carrousel{
     display: flex;
     justify-content: center;
-    padding: 10px 0px;
-    width: 100%;
+    padding-top: 20px;
+    width: 95%;
 }
-#cardHist{
-    display: flex;
+.imgTop{
+    padding: 1%;
+    width: 25%;
+    height: auto;
 }
-#localisation last-child{
+#histoireTexte{
     display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 0 5%;
+    width: auto;
+}
+#histoireTexte>p{
+    text-align: center;
+}
+#horaireText{
+    display: flex;
+    justify-content: space-between;
+    font-size: .7cm;
+}
+#fermeture{
+    padding-top: 5%;
+    text-decoration: underline;    
+    font-size: .7cm;
+}
+#tarif{
+    width: 80%;
+}
+#gamme{
+    display: flex;
+    margin: 0 15%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gammePrix{
+    justify-content: left;
+    font-size: .7cm;
+    padding: 0 50px;
+}
+#traitement{
+    padding-top: ;
+}
+#imgCentre{
+    width: 50%;
 }
 #maps{
     width: 300px;
+}
+footer{
+    background-color: #6F0B15;
+    width: 100%;
+    height: 50px;
 }
