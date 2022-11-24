@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    align-items: flex-end;
+    background-color: #6F0B15;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-family: 'Amsterdam Four_ttf';
+}
+body{
+    font-family:'Andika Basic';
+}
+h1{
+    text-align: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    padding-right: 20px;
+    color: white;
+}
+section{
+    margin-bottom: 75px;
+    padding-top: 75px;
+}
+#carrousel{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+#cardHist{
+    display: flex;
+}
+#localisation last-child{
+    display: flex;
+    justify-content: center;
+}
+#maps{
+    width: 300px;
+}
