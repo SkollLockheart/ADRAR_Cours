@@ -12,13 +12,12 @@ header{
     position: sticky;
     top: 0;
     flex-wrap: wrap;
-    padding: 3em 8em;
-    height: 100px;
+    padding: 1em 0em;
+    height: 150px;
 }
 #logo{
-    position: absolute;
-    left: 5%;
-    top: 5%;
+    width: 15%;
+    height: auto;
 }
 a{
     text-decoration: none;
@@ -93,11 +92,19 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5%;
-    width: auto;
+    width: 90vw;
 }
 #histoireTexte>p{
     text-align: center;
+}
+#cardHist{
+    width: 100%;
+    height: auto;
+}
+#grandPere{
+    padding: 1%;
+    width: 33%;
+    height: auto;
 }
 #horaireText{
     display: flex;
@@ -123,14 +130,34 @@ section{
     font-size: .7cm;
     padding: 0 50px;
 }
+#coupe{
+    padding-bottom: 50px;
+}
+#coloration{
+    padding-bottom: 50px;
+}
 #traitement{
-    padding-top: ;
+    padding-bottom: 50px;
 }
 #imgCentre{
     width: 50%;
 }
+#localisationText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+    background-color: rgb(197, 197, 197);
+    padding: 15px;
+    border-radius: 20px;
+}
 #maps{
-    width: 300px;
+    width: 400px;
+    border-radius: 8px;
+}
+#adresse{
+    padding-left: 25px;
+    font-size: .6cm;
 }
 footer{
     background-color: #6F0B15;
