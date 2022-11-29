@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1 id="bing">Gros Titre</h1>
+    <form action="#" method="post">
+        <input type="text" name="prenom">
+        <input type="number" name="age">
+        <input type="submit">
+    </form>
 
     <?php
         // Afficher quelque chose
@@ -32,7 +37,7 @@
             case 5 :
                 echo "<br>Égale à 5";
                 break;
-                default :
+            default :
                 echo "<br>Je suis le défaut";
                 break;
                 
@@ -41,6 +46,37 @@
         for ($i=0;$i<10;$i++){
             echo "Ceci est une boucle for en PHP<br>";
         }
+        // Super Global
+        //Vérification si champ vide ou non 
+        // true = pas null | false = null
+            // 1- Vérifier si la variable existe et n'est pas null
+            // echo isset($_POST["prenom"]);
+            // 2- Vérifier si la variable n'est pas vide
+            // $_POST["prenom"] != "";
+
+        // On combine le tout pour avoir notre condition final
+        echo "Vérification de tout les champs<br>";
+        if(isset($_POST["prenom"]) AND $_POST["prenom"] != "" AND isset($_POST["age"]) AND $_POST["age"] != ""){
+            echo "<br>Formulaire Valide";
+            $prenom = $_POST["prenom"];
+            $age = $_POST["age"];
+            echo "<br>$prenom a $age ans.";
+        }else {
+            echo "<br> ERROR";  
+        };
+        echo "Vérification Champ par Champ<br>";
+        if(isset($_POST["prenom"]) AND $_POST["prenom"] != ""){
+            echo "<br>Nom valide";
+            $prenom = $_POST["prenom"];
+        }else {
+            echo "<br> Il manque le nom";  
+        };
+        if(isset($_POST["age"]) AND $_POST["age"] != ""){
+            echo "<br>Âge valide";
+            $prenom = $_POST["age"];
+        }else {
+            echo "<br> Il manque l'âge";  
+        };
 
     ?>
 </body>

@@ -273,6 +273,51 @@
             }
         }
         compte(17);
+
+        // Exercice 10 :
+        // -Créer une fonction qui affiche la valeur la plus grande du tableau.
+        // $tab = array(10, 25,6,33, 58,1,49,110);
+        // nb : (fonction aura besoin d'un tableau en paramètre).
+        echo "<h3>Exercice 10</h3>";
+        $tab = array(10, 25,6,33, 58,1,49,110);
+        // $arrayLast = count($tab)-1;
+        // sort($tab);
+        // echo $tab[$arrayLast];
+
+        // Correction
+        function plusGrandSort($tableau){
+            rsort($tableau);
+            echo($tableau[0]);
+        };
+        plusGrandSort($tab);
+
+        
+
+        // Exercice 11 :
+        // -Créer une fonction qui affiche la valeur la plus petite du tableau.
+        // $tab = array(10, 25,6,33, 58,1,49,110);
+        // nb : (fonction aura besoin d'un tableau en paramètre).
+        echo "<h3>Exercice 11</h3>";
+        function plusPetitSort($tableau){
+            sort($tableau);
+            echo($tableau[0]);
+        };
+        plusPetitSort($tab);
+
+        // Exercice 12 :
+        // -Créer une fonction qui affiche la moyenne du tableau.
+        // (nb : il est utile d'utiliser la fonction sizeof()  ou count()  )
+        echo "<h3>Exercice 12</h3>";
+        function arrayMoyenne($tableau){
+            $longueur = count($tableau);
+            $somme = 0;
+            foreach($tableau as $value){
+            $somme = $somme + $value;
+            }
+            echo $somme/$longueur;
+        }
+        arrayMoyenne($tab);
+
         ?>
     </body>
 </html>
