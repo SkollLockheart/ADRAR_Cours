@@ -77,7 +77,26 @@
         }else {
             echo "<br> Il manque l'âge";  
         };
+    ?>
+        <!-- Checkbox -->
+    <form action="" method="post">
+        <h2>Quelle est votre classe de perso</h2>
+        <label name="box[]">Guerrier</label>
+        <input type="checkbox" name="box[]" value="Guerrier">
+        <label name="box[]">Voleur</label>
+        <input type="checkbox" name="box[]" value="voleur">
+        <label name="box[]">Mage</label>
+        <input type="checkbox" name="box[]" value="Mage">
+        <input type="submit">
+    </form>
 
+    <?php
+        if(isset($_POST["box"]) and $_POST["box"] != ""){
+            $tab = $_POST["box"];
+            foreach($tab as $value){ 
+                echo"<p>Vous Ãªtes : $value</p>";
+            }
+        }
     ?>
 </body>
 </html>

@@ -7,6 +7,7 @@
         <title>Document</title>
     </head>
     <body>
+        <h1>JOUR 1</h1>
         <?php
         // Exercice 1 :
         // -Créer une variable de type int avec pour valeur 5,
