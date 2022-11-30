@@ -98,5 +98,53 @@
             }
         }
     ?>
+    <!-- Connexion BDD -->
+    <?php
+    $bdd = new PDO('mysql:host=Localhost;dbname=nom_de_la_bdd', 'root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    //Exécution de la requête SQL avec un try catch pour la gestion des exceptions (messages d’erreurs)
+    try
+        {
+            //reqête pour stocker le contenu de toute la table le contenu est stocké dans la variable $data, $req stocke la requete  SQL.
+            $req = $bdd->query('SELECT * FROM utilisateur');
+            //boucle pour parcourir et afficher le contenu de chaque ligne de la table
+            while ($data = $req-fetch())
+            {
+                //affiche les information d'une colonne de la bdd par son nom d'attribut.
+                echo '<p>'.$data['nom_attribut'].'<p>';
+            }
+        }
+    catch(Exception $e)
+        {
+            //affichage d'une exception en cas d'erreur
+            die('Erreur : '.$e->getMessage());
+        }
+    
+        //Préparation de la requête SQL nous stockons dans une variable $req la requête à exécuter 
+            $req = $bdd->prepare('SELECT * FROM utilisateur where nom_utilisateur = :nom_utilisateur'); 
+        //Exécution de la requête SQL création à l’aide d’un tableau qui va contenir le ou les paramètres à affecter à la requête SQL
+            $req->execute(array(
+                'nom_utilisateur' => iconv("UTF-8", "ISO-8859-1//TRANSLIT", $nom_utilisateur),
+            )); 
+        //boucle pour parcourir et afficher le contenu de chaque ligne de la table 
+            while ($donnees = $req->fetch()) 
+            { 
+        //affichage des données d’une colonne du résultat de la requête par son non d’attribut (nom champ bdd)
+            echo '<p>'.$donnees['nom_attribut'].'</p>'; 
+            } 
+        
+        //Vérsion la plus sécurisé avec bindParam
+        try{
+            $req = $bdd->prepare("insert into users (login_user,name_user) values (:login,:name_user)");
+            $req->bindParam(1,$login,PDO::PARAM_STR);
+            $req->bindParam(2,$name_user,PDO::PARAM_STR);
+            $req->execute();
+            echo "<p>User enregistré en BDD<p>";
+        }catch(Exception $error){
+            var_dump("<p>".$error."<p>");
+        };
+        $bdd=null;
+        $req=null;
+
+    ?>
 </body>
 </html>
