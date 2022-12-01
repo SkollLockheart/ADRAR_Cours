@@ -134,7 +134,7 @@
         
         //Vérsion la plus sécurisé avec bindParam
         try{
-            $req = $bdd->prepare("insert into users (login_user,name_user) values (:login,:name_user)");
+            $req = $bdd->prepare("insert into users (login_user,name_user) values (?,?)");
             $req->bindParam(1,$login,PDO::PARAM_STR);
             $req->bindParam(2,$name_user,PDO::PARAM_STR);
             $req->execute();

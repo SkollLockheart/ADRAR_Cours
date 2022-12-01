@@ -31,7 +31,7 @@
     -Utiliser une requête SQL préparée à la place de la requête simple.
     -Afficher dans un paragraphe le nom et le contenu de l’article ajouté en bdd en dessous du formulaire. -->
     <form action="#" method="POST">
-        <fieldset>
+        <fieldset id="creaArticle">
             <Legend><h4>Création d'article</h4></Legend>
             <label for="nom_article">Nom de l'article</label>
             <br>
@@ -53,37 +53,39 @@
             $bdd = new PDO('mysql:host=localhost;dbname=articles','root','',
             array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
             try{
-                $req = $bdd->prepare("insert into articles (nom_article, contenu_article) values (:nom_article,:contenu_article)");
-                $req->bindParam(2,$name_user,PDO::PARAM_STR);
-                $req->bindParam(1,$login,PDO::PARAM_STR);
-                $req->execute(array(
-                    'nom_article' => $name,
-                    'contenu_article' => $content
-                ));
-                echo "<p>Article créé.<p>";
+                $req = $bdd->prepare("insert into articles (nom_article, contenu_article) values (?,?)");
+                $req->bindParam(2,$contenu_article,PDO::PARAM_STR);
+                $req->bindParam(1,$nom_article,PDO::PARAM_STR);
+                $req->execute();
+                echo "<p>Article créé.</p>";
             }catch(Exception $e){
-                echo "<p>".$e."<p>";
+                echo "<p>".$e."</p>";
             }
             $bdd=null;
             $req=null;
         }
     ?>
-        <?php
-            // $bdd = new PDO('mysql:host=localhost;dbname=articles','root','',
-            // array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            // try{
-            //     $req=$bdd->prepare('select nom_article, contenu_article from articles');
-            //     $req->execute();
-            //     $data = $req->fetchAll();
-            //     foreach($data as $row){
-            //         echo "<h1>".$row['nom_article']."</h1><p>".$row['contenu_article']."</p>";
-            //     }
-            // }catch(Exception $e){
-            //     echo "<p>".$e."<p>";
+    <style>
+        #creaArticle{
+            width:50%;
+        }
+    </style>
+    <?php
+        // $bdd = new PDO('mysql:host=localhost;dbname=articles','root','',
+        // array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        // try{
+            // $req=$bdd->prepare('select nom_article, contenu_article from articles');
+            // $req->execute();
+            // $data = $req->fetchAll();
+            // foreach($data as $row){
+            //     echo "<h1>".$row['nom_article']."</h1><p>".$row['contenu_article']."</p>";
             // }
-            // $bdd=null;
-            // $req=null;
-        ?>
+        // }catch(Exception $e){
+        //     echo "<p>".$e."</p>";
+        // }
+        // $bdd=null;
+        // $req=null;
+    ?>
     <h3>Exercice 18</h3>
     <!-- Exercice 19-  PROJET TASK Partie 1 
     a) Créer une base de données MYSQL depuis le MLD ci-dessous :
@@ -111,6 +113,7 @@
     -Utiliser une requête SQL préparée. -->
     <form action="#" method="POST">
         <fieldset id="exo18">
+            <legend><h4>Création de compte</h4></legend>
             <div id="nom">
                 <div>
                     <label for="name_user">Nom</label>
@@ -124,13 +127,15 @@
                 </div>
             </div>
             <br>
-            <label for="" class="titreLMP">Login</label>
+            <label for="login_user" class="titreLMP">Login</label>
             <br>
             <input type="text" name="login_user" class="champLMP">
             <br>
-            <label for="" class="titreLMP">Mot de passe</label>
+            <label for="mdp_user" class="titreLMP">Mot de passe</label>
             <br>
             <input type="text" name="mdp_user" class="champLMP">
+            <br>
+            <input id="bouton" type="submit" value="Ajouter">
         </fieldset>
     </form>
     <style>
@@ -152,7 +157,116 @@
             width : 50%;
             align-self : center;
         }
+        #bouton{
+            width : 30%;
+            align-self : center;
+            background-color : green;
+            color : white;
+        }
+        #validation{
+            font-size: 35px;
+            text-align: center;
+            width: 50%;
+        }
     </style>
-    
+    <?php
+        if(isset($_POST['name_user']) AND $_POST['name_user'] != "" AND isset($_POST['first_name_user']) AND $_POST['first_name_user'] != "" AND isset($_POST['login_user']) AND $_POST['login_user'] != "" AND isset($_POST['mdp_user']) AND $_POST['mdp_user'] != ""){
+            $name_user = $_POST['name_user'];
+            $first_name_user = $_POST['first_name_user'];
+            $login_user = $_POST['login_user'];
+            $mdp_user = $_POST['mdp_user'];
+
+            $bdd = new PDO('mysql:host=localhost;dbname=projet_task','root','',
+            array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            try{
+                $req = $bdd -> prepare("insert into user (name_user, first_name_user, login_user, mdp_user) values (?,?,?,?)");
+                $req -> bindParam(1,$name_user,PDO::PARAM_STR);
+                $req -> bindParam(2,$first_name_user,PDO::PARAM_STR);
+                $req -> bindParam(3,$login_user,PDO::PARAM_STR);
+                $req -> bindParam(4,$mdp_user,PDO::PARAM_STR);
+                $req -> execute();
+                echo "<p id=\"validation\">Compte créé!</p>";
+                echo "<p> $name_user $first_name_user, Login: $login_user Mot de passe: $mdp_user </p>";
+            }catch(Exception $e){
+                echo "<p>".$e."</p>";
+            }
+            $bdd=null;
+            $req=null;
+        }
+    ?>
+    <?php
+        $bdd = new PDO('mysql:host=localhost;dbname=projet_task','root','',
+        array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        try{
+            $req=$bdd->prepare('select name_user, first_name_user, login_user, mdp_user from user');
+            $req->execute();
+            $data = $req->fetchAll();
+            foreach($data as $row){
+                echo "<p>Nom: ".$row['name_user'].", Prenom: ".$row['first_name_user'].", Login: ".$row['login_user'].", MDP: ".$row['mdp_user']."</p>";
+            }
+        }catch(Exception $e){
+            echo "<p>".$e."</p>";  
+        }
+        $bdd=null;
+        $req=null;
+    ?>
+    <h3>Exercice 19</h3>
+    <!-- BONUS EXERCICE 19 :
+    - Afficher la liste des utilisateurs dans un formulaire. Chaque utilisateur aura une checkbox à côté de lui.
+    - Le Formulaire contiendra un input Submit qui aura pour Value = "Supprimer utilisateur"
+    - Ecrire une requête qui permet de supprimer de la bdd les utilisateurs cochés -->
+    <form action="#" method="POST">
+    <fieldset id="exo19">
+            <legend><h4>Suppression de compte</h4></legend>
+        <?php
+            $bdd = new PDO('mysql:host=localhost;dbname=projet_task','root','',
+            array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            try{
+                $req=$bdd->prepare('select login_user, id_user from user');
+                $req->execute();
+                $data = $req->fetchAll();
+                foreach($data as $row){
+                    echo "<input type=\"checkbox\" name=\"account[]\" value=\"".$row['id_user']."\">
+                    <label for=\"".$row['login_user']."\">".$row['login_user']."</label><br>";
+                }
+            }catch(Exception $e){
+                echo "<p>".$e."</p>";  
+            }
+            $bdd=null;
+            $req=null;
+        ?>
+        <br>
+        <input type="submit" id="suppression" value="Supprimer">
+        <?php
+            if(isset($_POST['account'])){
+                $bdd = new PDO('mysql:host=localhost;dbname=projet_task','root','',
+                array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                $account = $_POST['account'];
+                try{
+                    foreach($account as $value){
+                        $req=$bdd->prepare('delete from user where id_user in (?)');
+                        $req -> bindParam(1,$value,PDO::PARAM_INT);
+                        $req->execute();
+                        echo "Compte supprimé!";
+                    }
+                }catch(Exception $e){
+                    echo "<p>".$e."</p>";  
+                }
+                $bdd=null;
+                $req=null;
+            }
+
+        ?>
+        </fieldset>
+    </form>
+    <style>
+        #exo19{
+            width: 50%;
+        }
+        #suppression{
+            background-color: red;
+            color: white;
+        }
+    </style>
 </body>
 </html>
