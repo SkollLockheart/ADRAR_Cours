@@ -86,7 +86,7 @@
         // $bdd=null;
         // $req=null;
     ?>
-    <h3>Exercice 18</h3>
+    <h3>Exercice 19</h3>
     <!-- Exercice 19-  PROJET TASK Partie 1 
     a) Créer une base de données MYSQL depuis le MLD ci-dessous :
     -Nom de la BDD : «task»,
@@ -210,7 +210,7 @@
         $bdd=null;
         $req=null;
     ?>
-    <h3>Exercice 19</h3>
+    <h3>Exercice 19 Bonus</h3>
     <!-- BONUS EXERCICE 19 :
     - Afficher la liste des utilisateurs dans un formulaire. Chaque utilisateur aura une checkbox à côté de lui.
     - Le Formulaire contiendra un input Submit qui aura pour Value = "Supprimer utilisateur"

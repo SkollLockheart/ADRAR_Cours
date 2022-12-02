@@ -34,6 +34,9 @@
     2) Dans un fichier php, créer le HTML d'un formulaire pour enregistrer des Users, et importer des images 
     3) Créer le script php permettant d'enregistrer en BDD les Users avec leur image
     4) Ajouter un paragraphe qui affiche que l'enregistrement s'est bien passé, ou bien un message d'erreur-->
+    <!-- Bonus :
+    5) Vérifier que les images soient bien des fichier de type JPG ou PNG ou GIF
+    6) En dessous du formulaire, afficher le login des Users, ainsi que leurs images -->
     <form action="#" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend><h4>Création user avec avatar</h4></legend>
@@ -92,10 +95,17 @@
         </fieldset>
     </form>
     <h3>BONUS</h3>
-    SELECT article.id_article,titre_article,contenu_article,date_article,id_util,nom_cat FROM article 
-    INNER JOIN categorie,posseder
-    WHERE categorie.id_cat=posseder.id_cat
-    AND article.id_article=posseder.id_article;
+    <?php
+        $bdd = new PDO('mysql:host=localhost;dbname=exo_import','root','',
+        array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            
+        $req = $bdd -> prepare("select url_img, login_user FROM image INNER JOIN users ON users.id_user = image.id_user");
+        $req -> execute();
+        $data = $req -> fetchAll();
+        foreach($data as $row){
+            echo "<br>User : ".$row['login_user']." <br>Avatar :<br><img src=\"".$row['url_img']."\" alt=\"\"> ";
+        }
+    ?>
     <style>
         fieldset{
             width: 50%;
