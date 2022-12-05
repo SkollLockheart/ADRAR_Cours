@@ -138,13 +138,21 @@
             $req->bindParam(1,$login,PDO::PARAM_STR);
             $req->bindParam(2,$name_user,PDO::PARAM_STR);
             $req->execute();
-            echo "<p>User enregistré en BDD<p>";
+            echo "<p>User enregistré en BDD</p>";
         }catch(Exception $error){
-            var_dump("<p>".$error."<p>");
+            var_dump("<p>".$error."</p>");
         };
         $bdd=null;
         $req=null;
-
-    ?>
+        ?>
+        <!-- message proprement écrit dans une balise -->
+        <div id="message"></div>
+        <?php
+            echo"<script >met message = document.querySelector('#message');message.innerHtml = '$msg';</script>";
+        ?>
+        <!-- Classe et Objet -->
+        <?php
+        
+        ?>
 </body>
 </html>
