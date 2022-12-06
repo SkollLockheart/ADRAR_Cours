@@ -16,4 +16,4 @@ CREATE table image(
 ALTER table image
 add constraint fk_add_users
 foreign key(id_user)
-references users(id_user);
+references users(id_user);user

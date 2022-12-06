@@ -1,6 +1,7 @@
 <?php
     class Task
     {
+        //Attributs
         private $id_task;
         private $nom_task;
         private $content_task;
@@ -8,6 +9,7 @@
         private $id_user;
         private $id_cat;
 
+        //Constructeur
         public function __construct($id_task,$nom_task,$content_task,$date_task,$id_user,$id_cat){
             $this->id_task = $id_task;
             $this->nom_task = $nom_task;
@@ -17,6 +19,7 @@
             $this->id_cat = $id_cat;
         }
 
+        //GETTER et SETTER
         public function getId_task(){
             return $this->id_task;
         }
@@ -57,6 +60,28 @@
         }
         public function setId_cat($id_cat){
             $this->id_cat = $id_cat;
+        }
+
+        //METHOD
+        //Method Ajouter User
+        public function ajouterTask($bdd){
+            try{
+                $req = $bdd -> prepare("insert into task (nom_task, content_task, date_task) values (?,?,?)");
+                $nom_task=$this->getNom_task();
+                $content_task=$this->getContent_task();
+                $date_task=$this->getDate_task();
+                $req -> bindParam(1,$nom_task,PDO::PARAM_STR);
+                $req -> bindParam(2,$content_task,PDO::PARAM_STR);
+                $req -> bindParam(3,$date_task,PDO::PARAM_STR);
+                $req -> execute();
+                echo "<p id=\"validation\">Tâche créé!</p>";
+                $bdd=null;
+                $req=null;
+            }catch(Exception $e){
+                echo "<p>".$e."</p>"; 
+                $bdd=null;
+                $req=null; 
+            }
         }
     }
 ?>
