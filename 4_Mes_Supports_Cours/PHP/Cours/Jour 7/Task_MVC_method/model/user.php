@@ -93,6 +93,25 @@
             }
         }
 
+        
+        //Method pour selectionner un utlisateur à partir de son login
+        public function selectUserFromLogin($bdd){
+            $login_user = $this->getLoginUsers();
+            try{
+                $req=$bdd->prepare('select * from user where login_user =?');
+                $req->bindParam(1,$login_user,PDO::PARAM_STR);
+                $req->execute();
+                $data = $req->fetchAll();
+                return $data;
+                $bdd=null;
+                $req=null;
+            }catch(Exception $e){
+                echo "<p>".$e."</p>"; 
+                $bdd=null;
+                $req=null; 
+            }
+        }
+
         //Method Supprimer User
         public function deleteUser($bdd,$id_user){
             try{
@@ -109,5 +128,6 @@
                 $req=null; 
             }
         }
+
     }
 ?>

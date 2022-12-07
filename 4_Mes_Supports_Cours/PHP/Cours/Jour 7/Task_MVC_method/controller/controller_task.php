@@ -44,24 +44,47 @@
     if(isset($_POST['name_cat']) AND $_POST['name_cat'] != ""){
         $name_cat = $_POST['name_cat'];
 
-        $user = new Category("",$name_cat);
-        $user->ajouterUser($bdd);
+        $cat = new Category("",$name_cat);
+        $cat->ajouterCat($bdd);
     }
 
 
 
-    include('../vue/vue_task_creationTask_top.php');
-    include('../vue/vue_task_creationTask_bot.php');
+    include('../vue/vue_task_creationTask.php');
+
+    //récupérer l'id cat
+    //requête pour select toute les catégories
+    $category = new Category("","");
+    $data_cat = $category->afficherCategory($bdd);
+    //injecter le code avec JS dans mon <select>
+    $list_cat = '';
+    foreach($data_cat as $ligne){
+        $list_cat = $list_cat.'<option value='.$ligne["id_cat"].'>'.$ligne["name_cat"].'</option>';  
+    }
 
 
-    if(isset($_POST['nom_task']) AND $_POST['nom_task'] != "" AND isset($_POST['content_task']) AND $_POST['content_task'] != "" AND isset($_POST['date_task']) AND $_POST['date_task'] != ""){
+    if(isset($_POST['nom_task']) AND $_POST['nom_task'] != "" AND isset($_POST['content_task']) AND $_POST['content_task'] != "" AND isset($_POST['date_task']) AND $_POST['date_task'] != "" AND isset($_POST['login_user']) AND $_POST['login_user'] != "" AND isset($_POST['name_cat']) AND $_POST['name_cat'] != ""){
         $nom_task = $_POST['nom_task'];
         $content_task = $_POST['content_task'];
         $date_task = $_POST['date_task'];
+        $login_user = $_POST['login_user'];
+        $name_cat = $_POST['name_cat'];
 
-        $user = new Category("",$nom_task);
-        $user->ajouterUser($bdd);
+        //récuperer l'id user
+        $user = new User("","","",$login_user,"");
+        $data = $user->selectUserFromLogin($bdd);
+        $id_user;
+        foreach($data as $row){
+            $id_users = $row['id_user'];
+        }
+
+        $task = new Task("",$nom_task,$content_task,$date_task,$id_user,$id_cat);
+        $task->ajouterTask($bdd);
     }
+    echo"<script defer>
+            let select = document.querySelector('#select_cat');
+            select.innerHTML = '".$list_cat."';
+        </script>";
 
     include('../vue/vue_task_footer.php');
 ?>
