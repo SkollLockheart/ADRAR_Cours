@@ -48,7 +48,20 @@
         $user->ajouterUser($bdd);
     }
 
-    include('../vue/vue_task_creationTask.php');
+
+
+    include('../vue/vue_task_creationTask_top.php');
+    include('../vue/vue_task_creationTask_bot.php');
+
+
+    if(isset($_POST['nom_task']) AND $_POST['nom_task'] != "" AND isset($_POST['content_task']) AND $_POST['content_task'] != "" AND isset($_POST['date_task']) AND $_POST['date_task'] != ""){
+        $nom_task = $_POST['nom_task'];
+        $content_task = $_POST['content_task'];
+        $date_task = $_POST['date_task'];
+
+        $user = new Category("",$nom_task);
+        $user->ajouterUser($bdd);
+    }
 
     include('../vue/vue_task_footer.php');
 ?>

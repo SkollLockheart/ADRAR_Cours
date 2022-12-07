@@ -15,6 +15,9 @@
         <br>
         <br>
         <input class="bouton" type="submit" value="Créer">
+        <label for="pet-select">Choisissez un utilisateur:</label>
+        <select name="userSelect" >
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
 
-    </fieldset>
-</form>
+        </select>
