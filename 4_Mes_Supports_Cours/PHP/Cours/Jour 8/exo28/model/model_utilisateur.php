@@ -54,6 +54,20 @@
         }
 
         //Method Connexion
+        public function selectUtilisateurFromLogin($bdd){
+            $login_utilisateur = $this->getLogin_utilisateur();
+            try{
+                $req = $bdd -> prepare("select * from utilisateur where login_utilisateur = ?");
+                $req -> bindParam(1,$login_utilisateur,PDO::PARAM_STR);
+                $req -> execute();
+                $data = $req->fetchAll();
+                return $data;
 
+            }catch(Exception $e){
+                echo "<p>".$e."</p>"; 
+                $bdd=null;
+                $req=null; 
+            }
+        }
     }
 ?>

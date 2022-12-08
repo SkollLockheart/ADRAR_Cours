@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     include('../utils/connect.php');
     require('../model/model_utilisateur.php');
 
@@ -23,8 +25,24 @@
     if(isset($_POST['login_utilisateur_connexion']) AND $_POST['login_utilisateur_connexion'] != "" AND isset($_POST['mdp_utilisateur_connexion']) AND $_POST['mdp_utilisateur_connexion'] != ""){
         $login_utilisateur = $_POST['login_utilisateur_connexion'];
         $mdp_utilisateur = $_POST['mdp_utilisateur_connexion'];
+        $_SESSION['login_utilisateur'] = "";
+        $_SESSION['id_utilisateur'] = "";
 
-        //Vérifier si $login_utilisateur correspond à un login de la BDD
+        $user = new Utilisateur ("",$login_utilisateur,$mdp_utilisateur);
+        //Récupérer le login_utilisateur
+        $data = $user -> selectUtilisateurFromLogin($bdd);
+        if(!empty($data)){
+            foreach($data as $row){
+                if($row['mdp_utilisateur'] == $mdp_utilisateur){
+                    $_SESSION['login_utilisateur'] = $row['login_utilisateur'];
+                    $_SESSION['id_utilisateur'] = $row['id_utilisateur'];
+                    $_SESSION['connexion']="";
+                }
+            }
+            echo '<h3>'.$_SESSION['login_utilisateur'].' est bien connecté.</h3>';
+        }
+
+        
     }
 
 
@@ -34,6 +52,4 @@
             let message_inscription = document.querySelector('#message_inscription');
             message_inscription.innerHTML = '".$message_inscription."';
         </script>";
-
-    session_start();
 ?>

@@ -39,7 +39,9 @@
         #message_inscription{
             text-align:center;
         }
+        h3{
+            text-align:center;
+        }
     </style>
 
     <main>
-        <div id="inscr_co">
