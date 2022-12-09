@@ -1,6 +1,6 @@
         <form action="#" method="POST">
             <fieldset id="exo18">
-                <legend><h4>Création de compte</h4></legend>
+                <legend><h2>CRÉATION COMPTE</h2></legend>
                 <div id="nom">
                     <div>
                         <label for="name_user">Nom</label>
@@ -25,34 +25,3 @@
                 <input class="bouton" type="submit" value="Ajouter">
             </fieldset>
         </form>
-        <style>
-            #nom{
-                display : flex;
-            }
-            div{
-                margin-left : 30px;
-            }
-            #exo18{
-                display : flex;
-                flex-direction : column;
-                width : 50%;
-            }
-            .titreLMP{
-                text-align : center;
-            }
-            .champLMP{
-                width : 50%;
-                align-self : center;
-            }
-            .bouton{
-                width : 30%;
-                align-self : center;
-                background-color : green;
-                color : white;
-            }
-            #validation{
-                font-size: 35px;
-                text-align: center;
-                width: 50%;
-            }
-        </style>

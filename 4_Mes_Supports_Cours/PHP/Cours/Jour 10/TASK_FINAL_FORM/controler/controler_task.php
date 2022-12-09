@@ -1,14 +1,14 @@
 <?php
     session_start();
-    include('../utils/connect.php');
-    include('../model/model_category.php');
-    include('../model/model_task.php');
-    include('../vue/vue_header.php');
+    include('utils/connect.php');
+    include('model/model_category.php');
+    include('model/model_task.php');
+    include('vue/vue_header.php');
 
 
 
     if(isset($_SESSION['connexion'])){
-        include('../vue/vue_task.php');
+        include('vue/vue_task.php');
 
         $message_task="";
         $select_cat = "";
@@ -53,7 +53,7 @@
         echo '<h3>Veuilez vous connecter pour avoir accès aux tâches.</h3>';
     }
 
-    include('../vue/vue_footer.php');
+    include('vue/vue_footer.php');
 
 
 ?>

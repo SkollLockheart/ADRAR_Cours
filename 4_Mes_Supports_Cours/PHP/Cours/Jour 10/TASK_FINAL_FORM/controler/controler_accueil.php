@@ -1,10 +1,10 @@
 <?php
     session_start();
-    include('../utils/connect.php');
-    include('../model/model_user.php');
-    include('../vue/vue_header.php');
+    include('utils/connect.php');
+    include('model/model_user.php');
+    include('vue/vue_header.php');
     $message="";
-    include('../vue/vue_creationUser.php');
+    include('vue/vue_creationUser.php');
 
     //Inscription
     if(isset($_POST['name_user']) AND $_POST['name_user'] != "" AND isset($_POST['first_name_user']) AND $_POST['first_name_user'] != "" AND isset($_POST['login_user']) AND $_POST['login_user'] != "" AND isset($_POST['mdp_user']) AND $_POST['mdp_user'] != ""){
@@ -20,7 +20,7 @@
     echo"<h3> OU </h3>";
 
     //Connexion
-    include('../vue/vue_connexionUser.php');
+    include('vue/vue_connexionUser.php');
 
     if(isset($_POST['login_utilisateur_connexion']) AND $_POST['login_utilisateur_connexion'] != "" AND isset($_POST['mdp_utilisateur_connexion']) AND $_POST['mdp_utilisateur_connexion'] != ""){
         $login_user = $_POST['login_utilisateur_connexion'];
@@ -52,7 +52,7 @@
             $message = '<h3>Information de connexion incorrecte!</h3>';
         }
     }
-    include('../vue/vue_footer.php');
+    include('vue/vue_footer.php');
 
     echo "<script>
             let message = document.querySelector('#message');

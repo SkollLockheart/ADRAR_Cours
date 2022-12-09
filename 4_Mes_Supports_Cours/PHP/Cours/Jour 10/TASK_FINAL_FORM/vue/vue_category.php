@@ -9,8 +9,5 @@
         <input class="bouton" type="submit" value="Ajouter">
     </fieldset>
 </form>
-<style>
-    fieldset{
-        width : 50%;
-    }
-</style>
+
+<div id="message_cat"></div>

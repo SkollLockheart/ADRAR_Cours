@@ -1,13 +1,13 @@
 <?php
     session_start();
-    include('../utils/connect.php');
-    include('../model/model_category.php');
-    include('../vue/vue_header.php');
+    include('utils/connect.php');
+    include('model/model_category.php');
+    include('vue/vue_header.php');
 
     $message_cat="";
 
     if(isset($_SESSION['connexion'])){
-        include('../vue/vue_category.php');
+        include('vue/vue_category.php');
 
         if(isset($_POST['name_cat']) AND $_POST['name_cat']!=""){
             $name_cat = $_POST['name_cat'];
@@ -35,7 +35,7 @@
         $message_cat='<h3>Accès interdit.</h3><h3>Veuillez vous connecté!</h3>';
     }
 
-    include('../vue/vue_footer.php');
+    include('vue/vue_footer.php');
     echo '<script>
             let message_cat = document.querySelector("#message_cat");
             message_cat.innerHTML = "'.$message_cat.'";

@@ -1,0 +1,70 @@
+body{
+    font-family:"Bahnschrift Condensed";
+}
+header{
+    display:flex;
+    justify-content:space-around;
+    background-color: grey;
+    border: 3px solid black;
+}
+a{
+    text-decoration:none;
+    color:black;
+    background-color: white;
+    border: 2px solid black;
+    padding:2px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inscr_co{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+#message_inscription{
+    text-align:center;
+}
+h3{
+    text-align:center;
+}
+
+#nom{
+    display : flex;
+    align-self : center;
+}
+div{
+    padding-left : 15px;
+    padding-right : 15px;
+}
+#exo18{
+    display : flex;
+    flex-direction : column;
+    width : 50%;
+}
+.titreLMP{
+    text-align : center;
+}
+.champLMP{
+    width : 50%;
+    align-self : center;
+}
+.bouton{
+    align-self : center;
+    background-color : green;
+    color : white;
+}
+#validation{
+    font-size: 35px;
+    text-align: center;
+    width: 50%;
+}
+
+#formCo{
+    display: flex;
+    text-align: center;
+}
