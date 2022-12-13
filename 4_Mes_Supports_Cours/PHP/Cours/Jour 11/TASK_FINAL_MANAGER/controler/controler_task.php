@@ -45,6 +45,24 @@
             $message_task = "<h3>Veuillez remplir le formulaire.</h3>";
         }
 
+        //Afficher la liste des taches en check box
+        $task_list = new Manager_task ("","","","",$_SESSION['id_user'],"");
+        $data = $task_list->afficherTask($bdd);
+        echo"<form action=\"\" method=\"POST\">
+                <fieldset><legend>Suppression tâches</legend>";
+        foreach($data as $row){
+            echo "<input type=\"checkbox\" name=\"box[]\" value=\"".$row['id_task']."\">
+            <label for=\"".$row['nom_task']."\">".$row['nom_task']."</label><br>";
+        }
+        echo"<br><input type=\"submit\" value=\"Supprimer\" class=\"bouton\">
+        </fieldset>
+        </form>";
+
+        if(isset($_POST['box'])){
+            $box = $_POST['box'];
+            $task_box = new Manager_task ("","","","","","");
+            $task_box->supprimerTask($bdd,$box);
+        }
 
     }else{
         echo '<h3>Veuilez vous connecter pour avoir accès aux tâches.</h3>';

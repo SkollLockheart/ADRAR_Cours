@@ -1,0 +1,15 @@
+Exercice :
+SELON LE CAHIER DES CHARGES SUIVANT REALISER LE DIAGRAMME DE CLASSE :
+Vous devez concevoir une application de gestion d’un centre de formation.
+Plusieurs titres (nom court, nom long) sont proposés par le centre.
+Ils regroupent un ensemble de compétences à atteindre (nom, contenu).
+Un stagiaire (nom, prénom, adresse, numéro de téléphone, dernier diplôme) sera inscrit pour un titre et rattaché à une session (nom).
+Une salle de formation (nom) sera attribuée à la session.
+Les formateurs (nom, prénom, numéro de téléphones) ont chacun leurs propres compétences.
+Ils vont être assignés à une ou plusieurs sessions.
+Le responsable souhaite aussi gérer les stages (date du stage : début, fin) en entreprise.
+Il veut enregistrer :
+- Dans quelle entreprise le stagiaire est en stage
+- L’entreprise (nom, adresse, secteur d’activité)
+- Le tuteur (nom, prénom, numéro de téléphone, rôle dans l’entreprise)
+- Ses missions

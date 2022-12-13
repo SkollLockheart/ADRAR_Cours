@@ -26,5 +26,34 @@
                 $req=null; 
             }
         }
+
+        //Method Afficher les Task
+        public function afficherTask($bdd){
+            $id_user = $this->getId_user();
+            try{
+                $req=$bdd->prepare('select * from task where id_user = ?');
+                $req->bindParam(1,$id_user,PDO::PARAM_INT);
+                $req->execute();
+                $data = $req->fetchAll();
+                return $data;
+            }catch(Exception $e){
+                echo "<p>".$e."</p>";  
+            }
+        }
+
+        //Method Suprimer les tâches
+        public function supprimerTask($bdd,$box){
+            try{
+                foreach($box as $value){
+                    $req=$bdd->prepare('delete from task where id_task in (?)');
+                    $req -> bindParam(1,$value,PDO::PARAM_INT);
+                    $req->execute();
+                    echo "Tâche supprimé!";
+                    header('Location:http://localhost/Jour%2011/TASK_FINAL_MANAGER/task');
+                }
+            }catch(Exception $e){
+                echo "<p>".$e."</p>";  
+            }
+        }        
     }
 ?>
