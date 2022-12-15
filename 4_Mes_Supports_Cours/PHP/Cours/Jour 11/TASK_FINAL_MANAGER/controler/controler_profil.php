@@ -31,27 +31,7 @@
         $message_profil = "<h3>Personne n\'est connecté.</h3>";
     }
     include('vue/vue_footer.php');
-
-    // $login_user = $_SESSION['login_user'];
-        
-    // $user_profil = new Manager_user ("","","",$login_user,"");
-    // $data = $user_profil-> selectUserFromLogin($bdd);
-
-    // if(isset($_POST['login_user']) AND $_POST['login_user']!=""){
-    //     if(!empty($data)){
-    //         foreach($data as $row){
-    //             if($row['login_user'] === $login_user){
-    //                 $user = new Manager_user ($row['id_user'],$row['name_user'],$row['first_name_user'],$row['login_user'],$row['mdp_user']);
-    //                 $id_user = $row['id_user'];
-    //                 $user->UpdateMyLogin($_POST['login_user'],$bdd,$id_user);
-
-    //             }
-    //         }
-    //     }
-    // }
-
-    
-
+   
     echo '<script>
             let message_profil = document.querySelector("#profil");
             message_profil.innerHTML = "'.$message_profil.'";
