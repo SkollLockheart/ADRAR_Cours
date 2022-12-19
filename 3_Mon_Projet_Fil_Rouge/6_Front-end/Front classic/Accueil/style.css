@@ -270,16 +270,15 @@ footer{
     text-align: center;
     color: #A69153;
     padding: 1%;
-    font-size:0.8em;
     position: relative;
     z-index: 8;
 }
 footer a{
-    color: rgb(26, 106, 226);
+    color: rgb(72, 136, 231);
 }
 #logo_footer{
-    height: 80px;
-    width: auto;
+    height: auto;
+    width: 150px;
     border: solid #A69153 3px;
     border-radius: 10px;
 }
@@ -288,17 +287,19 @@ footer a{
     flex-direction: column;
 
 }
-footer, body:after {
+/* footer, body:after {
     height: 70px; 
-}
+} */
 #mention{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
+    font-size: .8em;
 }
 #contact{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-left: auto;
 }
