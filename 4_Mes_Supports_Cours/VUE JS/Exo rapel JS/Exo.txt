@@ -1,0 +1,6 @@
+Pour se faire une petite Révision : Direct petit TP, 
+Faire une TodoList en JS 
+
+- On a 1 input 
+- 1 button
+- Au Click sur le bouton, cela doit afficher dans la page ce que l'on a inscrit dans l'input
