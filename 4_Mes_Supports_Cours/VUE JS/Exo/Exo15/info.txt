@@ -1,0 +1,39 @@
+Etape 1
+    Data: 
+        viePlayer : 100
+        vieAdverse : 100
+    Methods:
+        attackSurAdversaire : 10 - 15
+        attackSurPlayer : 10 - 20 
+    	(PS : pour faire du tour par tour dans la ƒ° attackSurAdversaire on va appeler la ƒ° attackSurPlayer)
+
+Etape 2
+    Data: 
+        viePlayer : 100
+        vieAdverse : 100
+
+    v-bind 
+        witdh - viePlayer
+        witdh - vieAdverse
+
+Etape 3 
+    Methods:
+        attackSpeSurAdversaire : 20
+        Tout les 3 tour : Modulo/3 
+    Data : 
+        tours, incrémente tour++ dans attackSurPlayer
+
+Etape 4 : 
+    Data :
+        soinSurPlayer : 8-14
+    Methods:    
+        Pas dépasser viePlayer 100 
+        ƒ° attackSurPlayer
+        
+Etape 5 : 
+    v-if(si viePlayer ou vieAdverse = 0): Qui cache le jeu et affiche VICTOIRE OU PERDU 
+    Data :
+        winner : null (Joueur / Adversaire / Draw)
+    Watch : 
+        viePlayer et vieAdverse
+
