@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'fontDark';
+    src: url(asset/blackwood_castle/BLACC___.TTF);
+}
+*{
+    font-family: 'fontDark';
+}
+body{
+    position: relative;
+    background-color: #4D6E6B;
+}
+#combat{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    background-color: #182B31;
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    box-shadow: 0 3px 8px black;
+}
+#zoneCombat{
+    background-image: url("asset/foredsemor.jpg");
+    background-repeat: no-repeat;
+    width: 1276px;
+    height: 720px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#zoneJoueur{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+#zoneEnnemi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+.vie{
+    position: relative;
+    z-index: 1;
+    margin-left: 120px;
+    margin-top: -30px;
+    font-size: larger;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+h3{
+    color: white;
+    text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 0 -2px rgb(0, 0, 0),
+    1px 1px rgb(0, 0, 0), -1px -1px rgb(0, 0, 0), 1px -1px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0);
+}
+
+#fuiter{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    margin-top: -700px;
+    margin-left: 30%;
+    text-align: center;
+    z-index: 6;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+h4{
+    font-size: 150px;
+}
+#blur{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    background-color: rgba(243, 243, 243, 0.24);
+}
+#bg{
+    padding-left: 195px;
+}
+#attaque{
+    border: solid 1px white;
+    font-size: 20px;
+}
+#attaqueSpe{
+    border: solid 1px white;
+    font-size: 20px;
+}
+#soin{
+    border: solid 1px white;
+    font-size: 20px;
+}
+#fuite{
+    border: solid 1px white;
+    font-size: 20px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <h1>Bouton Attaque Spéciale</h1>
+    <div id="appAttackSpe">
+        <button>Peut importe</button>
+
+        <button :disabled="isDisabled">Attack Spé</button>
+    </div>
+
+    <h1>Victory ! 🏆</h1>
+
+    <div id="appVIF">
+        <div id="combat" v-if="finCombat == ''">
+        <p>PV méchant</p>
+        <p>{{vieAdverse}}</p>
+
+        <p>PV gentil</p>
+        <p>{{viePlayer}}</p>
+
+        <button @click="zero()">vie adverse 0</button>
+
+    </div>
+
+    <div id="stopCombat" v-else="finCombat != ''">
+        <p >
+            {{finCombat}}
+        </p>
+
+    </div>
+
+
+
+    <!-- <p v-if="viePlayer > 0 && vieAdverse <=0">
+        VICTOIRE
+    </p>
+    <p v-else-if="viePlayer <= 0 && vieAdverse > 0">
+        PERDU
+    </p>
+    <p v-else-if="viePlayer <= 0 && vieAdverse <= 0">
+        EGALITE
+    </p>
+    <p v-else>
+        EN COMBAT
+    </p>
+    -->
+
+</div>
+
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>

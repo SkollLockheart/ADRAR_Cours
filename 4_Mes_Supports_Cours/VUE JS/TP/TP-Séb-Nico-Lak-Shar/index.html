@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app" v-cloak>
+    <h1>Joe et la forêt de ses morts!</h1>
+    <!--ZONE DE JEU-->
+    <div id="combat" >
+        <!--ZONE DE COMBAT-->
+        <div id="zoneCombat">
+            <!--ZONE JOUEUR-->
+            <div id="zoneJoueur">
+                <!--VIE JOUEUR-->
+                <span>
+                    <div class="progress" style="height:30px; width:100%">
+                      <div class="progress-bar bg-danger" role="progressbar" :style="{ width: viePlayer + '%' }"aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="vie">{{viePlayer}}/100</p>
+                    <h3>Joe!</h3>
+                </span>
+                <!--SPRITE JOUEUR-->
+                <img src="asset/gentil.gif" alt="gentil" style="width:300px; overflow:hidden; margin-bottom: -65px">
+            </div>
+            <!--ZONE ENNEMI-->
+            <div id="zoneEnnemi">
+                <!--VIE ENNEMI-->
+                <span>  
+                    <div class="progress" style="height:30px; width:100%;transform: rotate(180deg)">
+                      <div class="progress-bar bg-danger" role="progressbar" :style="{ width: vieAdverse + '%'}"aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="vie">{{vieAdverse}}/100</p>
+                    <h3 id="bg">Bo Gauce</h3>
+                </span>
+                <!--SPRITE ENNEMI-->
+                <img src="asset/mechant.gif" alt="mechant" style="width:200px; overflow:hidden; margin-bottom: -20px">
+            </div>
+        </div>
+        <!--ZONE CONTROLER-->
+        <div>
+            <!--CONTROLER-->
+            <div class="container">
+                <div class="row">
+                    <button class="col m-1 btn btn-dark" @click="attackSurAdversaire()" id="attaque">Attaque</button>
+                    <button class="col m-1 btn btn-dark" @click="attaqueSpecial()" :disabled="isDisabled" id="attaqueSpe">Attaque Spécial</button>
+                </div>
+                <div class="row">
+                    <button class="col m-1 btn btn-dark" @click="soinsPlayer()" id="soin">Soin</button>
+                    <button class="col m-1 btn btn-dark" @click="fuite()" id="fuite">Fuite</button>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <!--LOG-->
+            <div><p></p></div>
+        </div>
+    </div>
+    <!--ECRAN FIN-->
+    <div>
+        <div id="fuiter" :style="{display: etatFin }">
+            <h4>{{ecranFin}}</h4>
+            <button @click="reset()">Recommencer</button> 
+        </div>
+    </div>
+    <!--FUITE-->
+    <div id="fuiter" :style="{display: etatFuite }">
+        <h4>T'as fuis Batard!</h4>
+        <button @click="reset()">Recommencer</button>
+    </div>
+    <div id="blur" :style="{display: blur }"></div>
+
+    <!-- script pour contacter VUE -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
