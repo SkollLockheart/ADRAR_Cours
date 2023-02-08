@@ -339,4 +339,4 @@ nom_type AS "Type",
 concat(nom_utilisateur," ",prenom_utilisateur) AS Utilisateur
 FROM seance INNER JOIN type_seance 
 ON seance.id_seance = type_seance.id_type INNER JOIN utilisateur
-ON seance.id_seance = utilisateur.id_utilisateur GROUP BY seance.id;
+ON seance.id_seance = utilisateur.id_utilisateur;
