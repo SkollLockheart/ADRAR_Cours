@@ -1,0 +1,42 @@
+name_monster
+ca_monster
+hp_monster
+hp_annotation_monster
+vigueur_monster
+reflexe_monster
+volonte_monster
+vitesse_monster
+for_monster
+mod_for_monster
+dex_monster
+mod_dex_monster
+con_monster
+mod_con_monster
+int_monster
+mod_int_monster
+sag_monster
+mod_sag_monster
+cha_mosnter
+mod_cha_monster
+bba_monster
+bmo_monster
+dmd_monster
+cac_monster
+dist_monster
+pouvoir_monster
+sort_monster
+dons_monster
+competence_monster
+langue_monster
+lore_monster
+
+
+table type
+table fp
+table size
+table environment
+table climat
+table alignment
+table origin
+table img
+
