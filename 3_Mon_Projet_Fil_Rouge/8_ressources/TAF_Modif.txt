@@ -1,0 +1,10 @@
+Revoir les stat a passer de Int a String ou Text
+	Résistance
+	Vitesse
+	
+Ajouter une annotation après le nom
+Ajouter une annotation pour la défense
+Ajouter une annotation pour BBA BMO DMD
+Ajouter une section Capacité Spécial
+Ajouter une section Espace et Allonge
+Ajouter une section RD
